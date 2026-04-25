@@ -6,7 +6,6 @@ import { Calendar, ArrowRight, Clock } from 'lucide-react';
 
 // Standard project imports
 import Header from "@/components/sections/Header";
-import Footer from "@/components/sections/Footer";
 
 export interface Blog {
   _id: string;
@@ -162,7 +161,7 @@ const BlogArchive = () => {
           </div>
         </section>
 
-        <Footer />
+        
       </div>
     </HelmetProvider>
   );
