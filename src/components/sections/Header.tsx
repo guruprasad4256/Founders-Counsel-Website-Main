@@ -1,15 +1,21 @@
 import React from 'react';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/FounderCounselLogo.png';
 
 const BlogHeader = () => {
   return (
-    <header className="w-full py-4 px-6 sticky top-0 z-50 shadow-md bg-gradient-to-r from-[#D4AF37] via-[#F2D472] to-[#AA8839]">
+    <header className="w-full py-4 px-6 sticky top-0 z-50 bg-black border-b border-white/5 shadow-2xl">
       <div className="max-w-7xl mx-auto flex items-center">
         <a href="/" className="block">
           <img 
             src={logo} 
-            alt="Logo" 
-            className="h-12 md:h-16 lg:h-20 w-auto object-contain transition-transform hover:scale-105 drop-shadow-sm" 
+            alt="Founder's Counsel Logo" 
+            // We removed drop-shadow to keep edges sharp
+            // added transform-gpu to force high-quality rendering
+            className="h-12 md:h-16 lg:h-20 w-auto transition-transform duration-300 hover:scale-[1.02] transform-gpu will-change-transform" 
+            style={{ 
+              imageRendering: 'auto', // Ensures standard high-quality interpolation
+              WebkitFontSmoothing: 'antialiased' 
+            }}
           />
         </a>
       </div>
