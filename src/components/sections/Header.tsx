@@ -11,7 +11,7 @@ const BlogHeader = () => {
             alt="Founder's Counsel Logo" 
             // We removed drop-shadow to keep edges sharp
             // added transform-gpu to force high-quality rendering
-            className="h-12 md:h-16 lg:h-20 w-auto transition-transform duration-300 hover:scale-[1.02] transform-gpu will-change-transform" 
+            className="h-20 md:h-24 lg:h-24 w-auto transition-transform duration-300 hover:scale-[1.02] transform-gpu will-change-transform" 
             style={{ 
               imageRendering: 'auto', // Ensures standard high-quality interpolation
               WebkitFontSmoothing: 'antialiased' 
