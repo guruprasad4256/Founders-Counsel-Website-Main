@@ -1,0 +1,83 @@
+import React, { JSX } from 'react';
+import { Link } from 'react-router-dom';
+import TestimonialCarousel from '../sections/TestimonialCarousel';
+import profileUrl from '../../assets/SathwikFcc.png'; 
+
+export default function About(): JSX.Element {
+  return (
+    <div className="pt-[72px] font-['Inter',sans-serif]">
+      {/* ABOUT HERO */}
+      <div className="bg-[#052028] py-14 px-6 md:px-[52px]">
+        <div className="grid grid-cols-1 md:grid-cols-[260px_1fr] gap-12 items-start max-w-[1100px]">
+          <div className="max-w-[200px] md:max-w-full">
+            <img src={profileUrl} alt="Sathwik Putta" className="w-full block" />
+            <p className="text-[10.5px] tracking-[.15em] uppercase text-white/35 mt-2.5">Sathwik Putta</p>
+          </div>
+          <div>
+            <h1 className="font-['Cormorant_Garamond',serif] text-[46px] text-white font-normal leading-none mb-1.5">Sathwik Putta</h1>
+            <p className="text-[11px] tracking-[.18em] uppercase text-[#C4912A] font-semibold mb-7">Founder & Chief Counsel</p>
+            <div className="space-y-4 text-[14.5px] leading-[1.9] text-white/70 font-light">
+              <p>Sathwik Putta founded Founder's Counsel & Co after over 12 years working across in-house legal roles and private practice. His experience spans growth-stage startups, mid-market businesses, and transactions across sectors - giving him a ground-level understanding of how legal decisions play out inside real businesses.</p>
+              <p>FCC is built on a single conviction: that founders and growing businesses deserve the same quality of legal thinking that large corporates take for granted, without the overhead, the distance, or the billing structures that make good counsel feel inaccessible.</p>
+              <p>Sathwik is an advocate enrolled with the Bar Council of Karnataka and practices primarily in Bengaluru, advising clients across India.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="about-body bg-white">
+        {/* PROBLEM & TIMELINE SECTION */}
+        <div className="grid grid-cols-1 md:grid-cols-2 border-b border-[#0B3B4A]/10">
+          <div className="p-6 md:p-12 md:border-r border-[#0B3B4A]/10 border-b md:border-b-0">
+            <div className="text-[11px] tracking-[.2em] uppercase text-[#C4912A] font-semibold mb-5">The Problem He Saw</div>
+            <h3 className="font-['Cormorant_Garamond',serif] text-[24px] text-[#0B3B4A] mb-4.5 font-medium leading-[1.2]">Founders build through key legal moments without counsel that has seen them from the inside.</h3>
+            <p className="text-[14px] leading-[1.85] text-[#5c5c5c]">Structuring, fundraising, first hires, vendor crises - these are legal inflection points. Most businesses handle them with generic templates, overpriced retainers, or no counsel at all. The cost only becomes visible later - in a poorly drafted shareholder agreement, an unenforceable contract, or an avoidable dispute. FCC exists to close that gap.</p>
+          </div>
+          <div className="p-6 md:p-12">
+            <div className="text-[11px] tracking-[.2em] uppercase text-[#C4912A] font-semibold mb-5">Career at a Glance</div>
+            <div className="flex flex-col">
+              <div className="grid grid-cols-[110px_1fr] gap-5 py-4.5 border-b border-[#0B3B4A]/10"><div className="text-[12px] text-[#C4912A] font-semibold tracking-[.04em] pt-0.5">2024 - Now</div><div className="text-[13.5px] text-[#5c5c5c] leading-[1.65]"><strong className="text-[#0B3B4A] font-semibold">Founder & Chief Counsel</strong>, Founder's Counsel & Co, Bengaluru</div></div>
+              <div className="grid grid-cols-[110px_1fr] gap-5 py-4.5 border-b border-[#0B3B4A]/10"><div className="text-[12px] text-[#C4912A] font-semibold tracking-[.04em] pt-0.5">2018 - 2024</div><div className="text-[13.5px] text-[#5c5c5c] leading-[1.65]"><strong className="text-[#0B3B4A] font-semibold">Senior In-House Counsel</strong>, growth-stage & mid-market companies - technology, healthcare, manufacturing</div></div>
+              <div className="grid grid-cols-[110px_1fr] gap-5 py-4.5 border-b border-[#0B3B4A]/10"><div className="text-[12px] text-[#C4912A] font-semibold tracking-[.04em] pt-0.5">2014 - 2018</div><div className="text-[13.5px] text-[#5c5c5c] leading-[1.65]"><strong className="text-[#0B3B4A] font-semibold">Associate</strong>, corporate law firm - M&A, commercial contracts, regulatory</div></div>
+              <div className="grid grid-cols-[110px_1fr] gap-5 py-4.5"><div className="text-[12px] text-[#C4912A] font-semibold tracking-[.04em] pt-0.5">2012 - 2014</div><div className="text-[13.5px] text-[#5c5c5c] leading-[1.65]"><strong className="text-[#0B3B4A] font-semibold">LL.B.</strong> - enrolled with Bar Council of Karnataka</div></div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="bg-[#FAF8F4] py-12 px-6 md:px-[52px]">
+          <div className="pb-9">
+            <span className="text-[11px] tracking-[.22em] uppercase text-[#C4912A] font-semibold block mb-2">Industries</span>
+            <h2 className="font-['Cormorant_Garamond',serif] text-[clamp(28px,3vw,40px)] text-[#0B3B4A] font-normal leading-[1.2]">Domain familiarity that shapes the counsel.</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#DDD8D0] mt-9">
+            <div className="bg-[#FAF8F4] p-7 md:px-8"><div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0B3B4A] font-medium mb-1.5">Technology & SaaS</div><p className="text-[12.5px] text-[#5c5c5c] leading-[1.6]">Product companies, B2B SaaS, and tech-enabled services</p></div>
+            <div className="bg-[#FAF8F4] p-7 md:px-8"><div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0B3B4A] font-medium mb-1.5">Healthcare & MedTech</div><p className="text-[12.5px] text-[#5c5c5c] leading-[1.6]">Regulated sector with compliance-heavy commercial decisions</p></div>
+            <div className="bg-[#FAF8F4] p-7 md:px-8"><div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0B3B4A] font-medium mb-1.5">Manufacturing</div><p className="text-[12.5px] text-[#5c5c5c] leading-[1.6]">Vendor contracts, supply chain documentation, premises</p></div>
+            <div className="bg-[#FAF8F4] p-7 md:px-8"><div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0B3B4A] font-medium mb-1.5">Real Estate</div><p className="text-[12.5px] text-[#5c5c5c] leading-[1.6]">Developers, operators, and businesses with property needs</p></div>
+            <div className="bg-[#FAF8F4] p-7 md:px-8"><div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0B3B4A] font-medium mb-1.5">Financial Services</div><p className="text-[12.5px] text-[#5c5c5c] leading-[1.6]">Fintech, NBFCs, and investment-linked businesses</p></div>
+            <div className="bg-[#FAF8F4] p-7 md:px-8"><div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0B3B4A] font-medium mb-1.5">Professional Services</div><p className="text-[12.5px] text-[#5c5c5c] leading-[1.6]">Consulting firms, agencies, and service businesses</p></div>
+          </div>
+        </div>
+
+        <div className="bg-[#0B3B4A] py-16">
+          <div className="max-w-[820px] mx-auto px-6 md:px-12">
+            <div>
+              <span className="text-[11px] tracking-[.22em] uppercase text-[#C4912A] font-semibold block mb-2">What Clients Say</span>
+              <h2 className="font-['Cormorant_Garamond',serif] text-[clamp(28px,3vw,40px)] text-white font-normal leading-[1.2]">Trusted by founders, MSMEs and growing businesses.</h2>
+            </div>
+            <TestimonialCarousel />
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#0B3B4A] py-14 px-6 md:px-[52px] flex items-center justify-between gap-10 flex-wrap">
+        <div>
+          <div className="font-['Cormorant_Garamond',serif] text-[clamp(26px,3vw,42px)] text-white font-normal leading-[1.25] mb-4">
+            Ready for legal support that<br /><em className="text-[#C4912A] italic">thinks like you do?</em>
+          </div>
+          <p className="text-[13.5px] text-white/55 leading-[1.7] max-w-[480px]">Direct access to senior counsel. No associates, no overhead, no runaround.</p>
+        </div>
+        <Link to="/contact" className="bg-[#C4912A] hover:bg-[#a87822] text-white py-3.5 px-8 text-[12px] font-semibold tracking-[.1em] uppercase inline-block transition-colors">Get in Touch</Link>
+      </div>
+    </div>
+  );
+}

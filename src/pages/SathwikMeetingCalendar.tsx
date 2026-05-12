@@ -1,4 +1,4 @@
-import MeetingScheduler from "../components/SathwikMeetingCalendar";
+import MeetingScheduler from "../components/sections/SathwikMeetingCalendar";
 import Header from "../components/sections/Header";
 
 const SathwikMeetingCalendar = () => {
