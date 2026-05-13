@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://founderscounsel.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://founderscounsel.co/</loc>
+  </url>
+
+  <url>
+    <loc>https://founderscounsel.co/about</loc>
+  </url>
+
+  <url>
+    <loc>https://founderscounsel.co/services</loc>
+  </url>
+
+  <url>
+    <loc>https://founderscounsel.co/work</loc>
+  </url>
+
+  <url>
+    <loc>https://founderscounsel.co/insights</loc>
+  </url>
+
+  <url>
+    <loc>https://founderscounsel.co/blogs</loc>
+  </url>
+
+  <url>
+    <loc>https://founderscounsel.co/careers</loc>
+  </url>
+
+  <url>
+    <loc>https://founderscounsel.co/contact</loc>
+  </url>
+
+  <url>
+    <loc>https://founderscounsel.co/book-a-meeting</loc>
   </url>
 </urlset>

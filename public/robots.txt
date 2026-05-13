@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://founderscounsel.com/sitemap.xml
+Sitemap: https://founderscounsel.co/sitemap.xml
