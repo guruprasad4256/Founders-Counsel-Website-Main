@@ -1,21 +1,25 @@
 import React from "react";
 import { ViteReactSSG } from "vite-react-ssg";
 import { HelmetProvider } from "react-helmet-async";
-import App from "./App";
-import "./styles.css"; // or "./index.css" depending on your setup
+import { Outlet } from "react-router-dom";
+import { appRoutes } from "./App";
+import "./styles.css";
 
-// Change "*" to "/" so the builder knows to generate an index.html for the home page
+// 1. We wrap all your pages inside a "pathless" layout route.
+// This injects the HelmetProvider into every page without using invalid SSG properties!
 const routes = [
   {
-    path: "/",
     element: (
       <React.StrictMode>
         <HelmetProvider>
-          <App />
+          <Outlet /> {/* Your individual pages from appRoutes will render right here */}
         </HelmetProvider>
       </React.StrictMode>
     ),
+    // 2. Pass the array we created in App.tsx as the children
+    children: appRoutes,
   },
 ];
 
+// 3. Now we simply pass the standard routes array. No TypeScript errors!
 export const createRoot = ViteReactSSG({ routes });
