@@ -1,5 +1,5 @@
 import React, { JSX, useState } from 'react';
-import logoUrl from '../assets/logo.png';
+import logoUrl from '../../assets/FCCLogo.png';
 
 export default function Disclaimer(): JSX.Element | null {
   const [show, setShow] = useState<boolean>(true);
