@@ -1,20 +1,16 @@
-import React from "react";
+import { StrictMode } from "react";
 import { ViteReactSSG } from "vite-react-ssg";
-import { HelmetProvider } from "react-helmet-async";
-import { Outlet } from "react-router-dom";
-import { appRoutes } from "./App";
+import App from "./App";
 import "./styles.css";
 
 const routes = [
   {
+    path: "*",
     element: (
-      <React.StrictMode>
-        <HelmetProvider>
-          <Outlet />
-        </HelmetProvider>
-      </React.StrictMode>
+      <StrictMode>
+        <App />
+      </StrictMode>
     ),
-    children: appRoutes,
   },
 ];
 

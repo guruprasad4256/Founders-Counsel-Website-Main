@@ -10,9 +10,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  server: {
-    host: "::",
-    port: 5174,
-    strictPort: true,
+  // We removed the `ssr: { noExternal: true }` block that was breaking the dev server!
+  ssgOptions: {
+    script: 'async',
+    formatting: 'none',
   },
 });

@@ -24,7 +24,6 @@ const BlogArchive = () => {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      // API TARGET: Founders Counsel
       const fullUrl = `${SERVER_URL}${endpoint}?site=Founders Counsel`;
       
       try {
@@ -47,9 +46,9 @@ const BlogArchive = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center min-h-[60vh] w-full font-poppins text-white bg-[#050505]">
-        <div className="text-sm tracking-[0.3em] uppercase animate-pulse border border-[#D4AF37]/30 px-8 py-3 rounded-full bg-[#D4AF37]/5 text-[#D4AF37]">
-          Accessing Founders Counsel Archives...
+      <div className="flex justify-center items-center min-h-[60vh] w-full font-['Inter',sans-serif] text-white bg-[#0E0B42]">
+        <div className="text-sm tracking-[0.3em] uppercase animate-pulse border border-[#C4912A]/30 px-8 py-3 rounded-full bg-[#C4912A]/5 text-[#C4912A]">
+          Accessing Founder's Counsel Archives...
         </div>
       </div>
     );
@@ -57,17 +56,17 @@ const BlogArchive = () => {
 
   if (error) {
     return (
-      <div className="flex justify-center items-center min-h-[60vh] w-full bg-[#050505] font-poppins">
-        <div className="bg-[#D4AF37]/5 border border-[#D4AF37]/20 px-8 py-6 rounded-2xl text-center">
-          <p className="text-[#D4AF37] text-sm font-bold uppercase tracking-widest mb-2">Connection Error</p>
-          <p className="text-gray-500 text-xs">{error}</p>
+      <div className="flex justify-center items-center min-h-[60vh] w-full bg-[#0E0B42] font-['Inter',sans-serif]">
+        <div className="bg-[#C4912A]/5 border border-[#C4912A]/20 px-8 py-6 rounded-2xl text-center">
+          <p className="text-[#C4912A] text-sm font-bold uppercase tracking-widest mb-2">Connection Error</p>
+          <p className="text-white/40 text-xs">{error}</p>
         </div>
       </div>
     );
   }
 
   return (
-    <section className="relative w-full bg-[#050505] font-poppins pt-24 pb-20 selection:bg-[#D4AF37]/30">
+    <section className="relative w-full bg-[#0E0B42] font-['Inter',sans-serif] pt-24 pb-20 selection:bg-[#C4912A]/30">
       <style>
         {`
           .hide-scrollbar::-webkit-scrollbar { display: none; }
@@ -76,17 +75,17 @@ const BlogArchive = () => {
       </style>
 
       {/* Decorative Glow */}
-      <div className="pointer-events-none absolute -left-32 top-20 h-96 w-96 rounded-full bg-[#D4AF37]/5 blur-[120px]" />
+      <div className="pointer-events-none absolute -left-32 top-20 h-96 w-96 rounded-full bg-[#C4912A]/10 blur-[120px]" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <header className="mb-20 text-center flex flex-col items-center">
-          <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-[#D4AF37] font-semibold mb-6 block">
-             Founders Counsel
+          <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-[#C4912A] font-semibold mb-6 block">
+             Founder's Counsel
           </span>
-          <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] text-white tracking-tight mb-8">
-            Notes for the <span className="bg-gradient-to-r from-[#D4AF37] via-[#F2D472] to-[#AA8839] bg-clip-text text-transparent italic">long game.</span>
+          <h1 className="font-['Cormorant_Garamond',serif] text-5xl md:text-7xl font-bold leading-[1.1] text-white tracking-tight mb-8">
+            Notes for the <span className="bg-gradient-to-r from-[#C4912A] via-[#E5C173] to-[#C4912A] bg-clip-text text-transparent italic">long game.</span>
           </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed font-light">
+          <p className="text-white/60 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed font-light">
             Essays and frameworks from operators who ship. No engagement bait. Just the architecture of building.
           </p>
         </header>
@@ -97,9 +96,9 @@ const BlogArchive = () => {
               <Link 
                 to={`/blogs/${blog.slug || blog._id}`} 
                 key={blog._id} 
-                className="flex-shrink-0 w-[85vw] sm:w-[340px] md:w-full snap-center group bg-[#0A0A0A] border border-white/5 rounded-2xl overflow-hidden transition-all duration-500 hover:border-[#D4AF37]/40 hover:bg-[#111111] shadow-2xl flex flex-col"
+                className="flex-shrink-0 w-[85vw] sm:w-[340px] md:w-full snap-center group bg-white/5 border border-white/10 rounded-2xl overflow-hidden transition-all duration-500 hover:border-[#C4912A]/40 hover:bg-white/[0.08] shadow-2xl flex flex-col"
               >
-                <div className="relative aspect-[16/10] w-full bg-neutral-900 overflow-hidden">
+                <div className="relative aspect-[16/10] w-full bg-[#0E0B42] overflow-hidden">
                   {blog.featuredImage ? (
                     <img 
                       src={blog.featuredImage} 
@@ -111,23 +110,23 @@ const BlogArchive = () => {
                       No Visual Record
                     </div>
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0E0B42] via-transparent to-transparent opacity-60" />
                 </div>
 
                 <div className="p-8 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-5">
-                    <p className="text-[10px] text-[#D4AF37] font-bold tracking-[0.3em] uppercase">
+                    <p className="text-[10px] text-[#C4912A] font-bold tracking-[0.3em] uppercase">
                       {new Date(blog.createdAt).toLocaleDateString('en-US', {
                         year: 'numeric', month: 'long', day: 'numeric'
                       })}
                     </p>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-[#D4AF37] transition-colors duration-300 leading-tight mb-8">
+                  <h3 className="font-['Cormorant_Garamond',serif] text-xl md:text-2xl font-bold text-white group-hover:text-[#C4912A] transition-colors duration-300 leading-tight mb-8">
                     {blog.title}
                   </h3>
                   
                   <div className="mt-auto flex items-center">
-                     <span className="inline-flex items-center gap-2 text-xs font-semibold text-[#D4AF37] uppercase tracking-[0.2em] group-hover:gap-4 transition-all">
+                     <span className="inline-flex items-center gap-2 text-xs font-semibold text-[#C4912A] uppercase tracking-[0.2em] group-hover:gap-4 transition-all">
                       Read Essay
                       <ArrowRight className="h-4 w-4" />
                     </span>
@@ -137,7 +136,7 @@ const BlogArchive = () => {
             ))
           ) : (
             <div className="text-center col-span-full py-24 w-full flex justify-center">
-              <p className="text-gray-500 italic tracking-widest border border-dashed border-white/10 px-10 py-5 rounded-full">
+              <p className="text-white/30 italic tracking-widest border border-dashed border-white/10 px-10 py-5 rounded-full">
                 The archives are currently quiet.
               </p>
             </div>

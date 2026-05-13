@@ -1,4 +1,4 @@
-import React, { useState, useEffect,JSX } from 'react';
+import React, { useState, useEffect, JSX } from 'react';
 
 interface Testimonial {
   quote: string;
@@ -50,6 +50,10 @@ export default function TestimonialCarousel(): JSX.Element {
   const [cur, setCur] = useState<number>(0);
   const [paused, setPaused] = useState<boolean>(false);
 
+  // BRAND COLORS:
+  // Navy: #0E0B42
+  // Gold: #C4912A
+
   useEffect(() => {
     if (paused) return;
     const timer = setInterval(() => {
@@ -61,38 +65,53 @@ export default function TestimonialCarousel(): JSX.Element {
   const goTo = (i: number): void => setCur(i);
 
   return (
-    <div className="relative overflow-hidden mt-11" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
-      <div className="flex transition-transform duration-600 ease-[cubic-bezier(.4,0,.2,1)]" style={{ transform: `translateX(-${cur * 100}%)` }}>
+    <div 
+      className="relative overflow-hidden mt-11 font-['Inter',sans-serif]" 
+      onMouseEnter={() => setPaused(true)} 
+      onMouseLeave={() => setPaused(false)}
+    >
+      <div 
+        className="flex transition-transform duration-600 ease-[cubic-bezier(.4,0,.2,1)]" 
+        style={{ transform: `translateX(-${cur * 100}%)` }}
+      >
         {testimonials.map((t, idx) => (
           <div className="min-w-full px-1 box-border" key={idx}>
             <p className="font-['Cormorant_Garamond',serif] text-[22px] text-white/90 leading-[1.7] italic mb-7 relative pt-8 before:content-['\201C'] before:font-['Cormorant_Garamond',serif] before:text-[80px] before:text-[#C4912A] before:opacity-40 before:absolute before:-top-4 before:-left-2 before:leading-none">
               {t.quote}
             </p>
-            <div className="text-[13px] text-[#C4912A] font-semibold tracking-[.06em]">{t.who}</div>
-            <div className="text-[12px] text-white/40 mt-1 tracking-[.02em]">{t.co}</div>
-            <div className="text-[10.5px] text-white/30 mt-1.5 tracking-[.08em] uppercase">{t.li}</div>
+            <div className="text-[13px] text-[#C4912A] font-bold tracking-[.06em] uppercase">{t.who}</div>
+            <div className="text-[12px] text-white/50 mt-1 tracking-[.02em]">{t.co}</div>
+            <div className="text-[10.5px] text-white/30 mt-1.5 tracking-[.08em] uppercase font-medium">{t.li}</div>
           </div>
         ))}
       </div>
+
       <div className="flex items-center justify-center gap-5 mt-10">
         <button 
           className="bg-transparent border border-white/20 text-white/60 w-9 h-9 rounded-full cursor-pointer text-[16px] flex items-center justify-center transition-all hover:border-[#C4912A] hover:text-[#C4912A]" 
           onClick={() => goTo((cur - 1 + testimonials.length) % testimonials.length)}
+          aria-label="Previous testimonial"
         >
           &#8592;
         </button>
+        
         <div className="flex gap-2 items-center">
           {testimonials.map((_, idx) => (
             <button 
               key={idx} 
-              className={`border-none p-0 cursor-pointer transition-all duration-300 ${idx === cur ? 'bg-[#C4912A] w-[22px] h-1.5 rounded-[3px]' : 'bg-white/25 w-1.5 h-1.5 rounded-full'}`} 
+              className={`border-none p-0 cursor-pointer transition-all duration-300 ${
+                idx === cur ? 'bg-[#C4912A] w-[22px] h-1.5 rounded-[3px]' : 'bg-white/25 w-1.5 h-1.5 rounded-full'
+              }`} 
               onClick={() => goTo(idx)}
+              aria-label={`Go to slide ${idx + 1}`}
             ></button>
           ))}
         </div>
+
         <button 
           className="bg-transparent border border-white/20 text-white/60 w-9 h-9 rounded-full cursor-pointer text-[16px] flex items-center justify-center transition-all hover:border-[#C4912A] hover:text-[#C4912A]" 
           onClick={() => goTo((cur + 1) % testimonials.length)}
+          aria-label="Next testimonial"
         >
           &#8594;
         </button>

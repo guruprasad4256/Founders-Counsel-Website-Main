@@ -1,12 +1,13 @@
 import MeetingScheduler from "../components/sections/SathwikMeetingCalendar";
-import Header from "../components/sections/Header";
+import Navbar from "../components/sections/Navbar";
+import Footer from "../components/sections/Footer";
 
 const SathwikMeetingCalendar = () => {
   return (
     <div className="w-full min-h-screen bg-black">
-      <Header />
+      <Navbar />
       <MeetingScheduler />
-      
+      <Footer />
     </div>
   );
 };

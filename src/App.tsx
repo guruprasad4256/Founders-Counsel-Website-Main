@@ -1,32 +1,40 @@
-import { useRoutes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/sections/Navbar";
+import Footer from "./components/sections/Footer";
 
-import BlogArchive from "./pages/BlogArchive";
-import BlogSingle from "./pages/BlogSingle";
-import NotFound from "./pages/NotFound";
+// Page Imports
 import Home from "./pages/Home";
-import SathwikMeeting from "./pages/SathwikMeetingCalendar";
-
 import About from "./pages/About";
 import Services from "./pages/ServicesPage";
 import Work from "./pages/Work";
 import Insights from "./pages/Insights";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
-
-export const appRoutes = [
-  { path: "/", element: <Home /> },
-  { path: "/book-a-meeting", element: <SathwikMeeting /> },
-  { path: "/blogs", element: <BlogArchive /> },
-  { path: "/blogs/:slug", element: <BlogSingle /> },
-  { path: "/about", element: <About /> },
-  { path: "/services", element: <Services /> },
-  { path: "/work", element: <Work /> },
-  { path: "/insights", element: <Insights /> },
-  { path: "/careers", element: <Careers /> },
-  { path: "/contact", element: <Contact /> },
-  { path: "*", element: <NotFound /> },
-];
+import BlogArchive from "./pages/BlogArchive";
+import BlogSingle from "./pages/BlogSingle";
+import SathwikMeeting from "./pages/SathwikMeetingCalendar";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
-  return useRoutes(appRoutes);
+  return (
+    <div className="min-h-screen bg-[#0E0B42]">
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/insights" element={<Insights />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blogs" element={<BlogArchive />} />
+          <Route path="/blogs/:slug" element={<BlogSingle />} />
+          <Route path="/book-a-meeting" element={<SathwikMeeting />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  );
 }
