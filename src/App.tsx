@@ -1,7 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/sections/Navbar";
-import Footer from "./components/sections/Footer";
-
 // Page Imports
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -18,7 +15,6 @@ import NotFound from "./pages/NotFound";
 export default function App() {
   return (
     <div className="min-h-screen bg-[#0E0B42]">
-      <Navbar />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -34,7 +30,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
-      <Footer />
+      
     </div>
   );
 }
