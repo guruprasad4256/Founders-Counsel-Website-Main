@@ -47,26 +47,16 @@ export default function Footer(): JSX.Element {
         </div>
       </div>
 
-      {/* Bottom Section: 3-Column Layout */}
+      {/* Bottom Section: 2-Column Layout (Updated from 3) */}
       <div className="pt-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           
           {/* Col 1: Copyright */}
           <div className="text-[11px] text-white/30 text-center md:text-left">
             &copy; 2026 Founder's Counsel &amp; Co. All rights reserved.
           </div>
 
-          {/* Col 2: Parent Company Branding */}
-          <div className="text-[10px] text-white/20 tracking-wide uppercase font-medium text-center">
-            FCC (A brand of <a 
-              href="https://scgbsolutions.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="hover:text-white/40 transition-colors underline underline-offset-2"
-            >SCGB Solutions Pvt Ltd</a>)
-          </div>
-
-          {/* Col 3: Disclaimer - Wrapped in 2 lines */}
+          {/* Col 2: Disclaimer - Wrapped in 2 lines */}
           <div className="text-[10.5px] text-white/30 leading-[1.5] text-center md:text-right md:max-w-[420px] md:ml-auto">
             The Bar Council of India does not permit advertisement or solicitation by advocates. 
             This website is for informational purposes only and does not constitute legal advice.
