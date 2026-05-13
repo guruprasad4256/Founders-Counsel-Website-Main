@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Footer(): JSX.Element {
   return (
     <footer className="bg-[#0E0B42] pt-11 px-6 md:px-12 pb-7 font-['Inter',sans-serif]">
+      {/* Top Section: Brand and Links */}
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-12 pb-10 border-b border-white/10">
         <div>
           <div className="font-['Cormorant_Garamond',serif] text-[17px] font-semibold text-white/90 tracking-[.04em] mb-3.5 flex items-center gap-2.5">
@@ -46,16 +47,16 @@ export default function Footer(): JSX.Element {
         </div>
       </div>
 
-      {/* 3-Column Bottom Bar */}
+      {/* Bottom Section: 3-Column Layout */}
       <div className="pt-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
           
-          {/* Column 1: Copyright */}
+          {/* Col 1: Copyright */}
           <div className="text-[11px] text-white/30 text-center md:text-left">
             &copy; 2026 Founder's Counsel &amp; Co. All rights reserved.
           </div>
 
-          {/* Column 2: Parent Company Link */}
+          {/* Col 2: Parent Company Branding */}
           <div className="text-[10px] text-white/20 tracking-wide uppercase font-medium text-center">
             FCC (A brand of <a 
               href="https://scgbsolutions.com" 
@@ -65,9 +66,10 @@ export default function Footer(): JSX.Element {
             >SCGB Solutions Pvt Ltd</a>)
           </div>
 
-          {/* Column 3: Legal Disclaimer */}
+          {/* Col 3: Disclaimer - Wrapped in 2 lines */}
           <div className="text-[10.5px] text-white/30 leading-[1.5] text-center md:text-right md:max-w-[420px] md:ml-auto">
-            The Bar Council of India does not permit advertisement or solicitation by advocates. This website is for informational purposes only and does not constitute legal advice.
+            The Bar Council of India does not permit advertisement or solicitation by advocates. 
+            This website is for informational purposes only and does not constitute legal advice.
           </div>
 
         </div>
