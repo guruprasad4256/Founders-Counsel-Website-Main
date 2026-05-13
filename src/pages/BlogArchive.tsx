@@ -1,10 +1,10 @@
 import BlogArchiveComponent from "../components/sections/BlogArchive";
-import Header from "../components/sections/Header";
+import Navbar from "../components/sections/Navbar";
 
 const BlogArchivePage = () => {
   return (
     <div className="w-full min-h-screen bg-black">
-      <Header />
+      <Navbar />
       <BlogArchiveComponent />
       
     </div>
