@@ -1,0 +1,14 @@
+{
+  "src/main.tsx": {
+    "file": "main.mjs",
+    "name": "main",
+    "src": "src/main.tsx",
+    "isEntry": true,
+    "assets": [
+      "assets/FounderCounselLogo-CSbJBHW1.png",
+      "assets/SathwikFcc-CbTW3jJr.png",
+      "assets/FCCLogo-CZevM82d.png",
+      "assets/logo-3fwvA41y.png"
+    ]
+  }
+}

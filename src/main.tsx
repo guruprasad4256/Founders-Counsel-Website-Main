@@ -2,12 +2,12 @@ import React from "react";
 import { ViteReactSSG } from "vite-react-ssg";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App";
-import "./styles.css";
+import "./styles.css"; // or "./index.css" depending on your setup
 
-// 1. We wrap your App with StrictMode and HelmetProvider right here in the route definition.
+// Change "*" to "/" so the builder knows to generate an index.html for the home page
 const routes = [
   {
-    path: "*",
+    path: "/",
     element: (
       <React.StrictMode>
         <HelmetProvider>
@@ -18,5 +18,4 @@ const routes = [
   },
 ];
 
-// 2. Now we simply pass the routes array. No invalid properties!
 export const createRoot = ViteReactSSG({ routes });
