@@ -1,6 +1,6 @@
 import React, { JSX, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import profileUrl from '../../assets/SathwikFcc.png';
+import profileUrl from '../../assets/SathwikPortfolio.jpg';
 
 export default function Home(): JSX.Element {
   // Array of images to cycle through

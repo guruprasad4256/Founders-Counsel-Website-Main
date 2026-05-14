@@ -1,7 +1,7 @@
 import React, { JSX } from 'react';
 import { Link } from 'react-router-dom';
 import TestimonialCarousel from '../sections/TestimonialCarousel';
-import profileUrl from '../../assets/SathwikFcc.png'; 
+import profileUrl from '../../assets/SathwikPortfolio.jpg'; 
 
 export default function About(): JSX.Element {
   // BRAND COLORS:
