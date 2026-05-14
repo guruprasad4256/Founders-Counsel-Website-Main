@@ -40,7 +40,7 @@ export default function Footer(): JSX.Element {
 
         <div className="flex flex-col">
           <div className="text-[10px] tracking-[.2em] uppercase text-[#C4912A] font-semibold mb-4.5">Contact</div>
-          <a href="mailto:sathwik@founderscounsel.co" className="text-[13px] text-white/50 leading-[1.7] hover:text-[#C4912A] transition-colors">sathwik@founderscounsel.co</a>
+          <a href="mailto:contact@founderscounsel.co" className="text-[13px] text-white/50 leading-[1.7] hover:text-[#C4912A] transition-colors">contact@founderscounsel.co</a>
           <a href="tel:+919845000000" className="text-[13px] text-white/50 leading-[1.7] mt-2 hover:text-[#C4912A] transition-colors">+91 98450 00000</a>
           <p className="text-[13px] text-white/50 leading-[1.7] mt-2">Bengaluru, Karnataka</p>
           <a href="https://in.linkedin.com/in/sathwikputta" target="_blank" rel="noopener noreferrer" className="text-[13px] text-white/50 mt-3 hover:text-[#C4912A] transition-colors">LinkedIn</a>
