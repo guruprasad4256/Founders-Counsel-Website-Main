@@ -31,9 +31,9 @@ export default function Careers(): JSX.Element {
           
           <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[620px]">
             If you are a law graduate or junior associate interested in corporate and commercial work, write to us at {' '}
-            <strong className="text-[#0E0B42] font-bold border-b border-[#C4912A]/30 pb-0.5">
+            <a href="mailto:contact@founderscounsel.co" className="text-[#0E0B42] font-bold border-b border-[#C4912A]/30 pb-0.5">
               contact@founderscounsel.co
-            </strong> {' '}
+            </a> {' '}
             with a brief note about yourself.
           </p>
           
