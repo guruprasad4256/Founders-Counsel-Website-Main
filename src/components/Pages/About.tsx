@@ -12,10 +12,14 @@ export default function About(): JSX.Element {
     <div className="pt-[72px] font-['Inter',sans-serif]">
       {/* ABOUT HERO */}
       <div className="bg-[#0E0B42] py-14 px-6 md:px-[52px]">
-        <div className="grid grid-cols-1 md:grid-cols-[260px_1fr] gap-12 items-start max-w-[1100px] mx-auto">
-          <div className="max-w-[200px] md:max-w-full">
-            <img src={profileUrl} alt="Sathwik Putta" className="w-full block rounded-sm shadow-xl grayscale-[20%] hover:grayscale-0 transition-all" />
-            <p className="text-[10.5px] tracking-[.15em] uppercase text-white/35 mt-2.5 font-medium">Sathwik Putta</p>
+        <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-12 items-center max-w-full mx-auto">
+          <div className="max-w-[240px] md:max-w-full mx-auto text-center">
+            <img 
+              src={profileUrl} 
+              alt="Sathwik Putta" 
+              className="w-full aspect-square object-cover rounded-full shadow-xl grayscale-[20%] hover:grayscale-0 transition-all border-2 border-[#C4912A]/30" 
+            />
+            <p className="text-[10.5px] tracking-[.15em] uppercase text-white/35 mt-4 font-medium">Sathwik Putta</p>
           </div>
           <div>
             <h1 className="font-['Cormorant_Garamond',serif] text-[46px] text-white font-bold leading-none mb-1.5">Sathwik Putta</h1>
