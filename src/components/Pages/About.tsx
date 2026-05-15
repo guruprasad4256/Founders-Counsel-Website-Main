@@ -43,32 +43,32 @@ export default function About(): JSX.Element {
           </div>
           <div className="p-6 md:p-12">
             <div className="text-[11px] tracking-[.2em] uppercase text-[#C4912A] font-bold mb-5">Career at a Glance</div>
-            <div className="flex flex-col">
-              <div className="grid grid-cols-[110px_1fr] gap-5 py-4.5 border-b border-[#0E0B42]/10">
-                <div className="text-[12px] text-[#C4912A] font-bold tracking-[.04em] pt-0.5">2024 - Now</div>
+            
+            {/* TIMELINE SECTION */}
+            <div className="relative border-l border-[#0E0B42]/20 ml-2 mt-4 space-y-8 pb-2">
+              <div className="relative pl-6 md:pl-8">
+                <span className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-[#C4912A] ring-4 ring-white" />
+                <div className="text-[12px] text-[#C4912A] font-bold tracking-[.04em] mb-1.5">2018</div>
                 <div className="text-[13.5px] text-[#0E0B42]/70 leading-[1.65]">
-                  <strong className="text-[#0E0B42] font-bold">Founder & Chief Counsel</strong>, Founder's Counsel & Co, Bengaluru
+                  <strong className="text-[#0E0B42] font-bold">Independent boutique lawyer</strong> working with founders, early stage and growth startups
                 </div>
               </div>
-              <div className="grid grid-cols-[110px_1fr] gap-5 py-4.5 border-b border-[#0E0B42]/10">
-                <div className="text-[12px] text-[#C4912A] font-bold tracking-[.04em] pt-0.5">2018 - 2024</div>
+              <div className="relative pl-6 md:pl-8">
+                <span className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-[#C4912A] ring-4 ring-white" />
+                <div className="text-[12px] text-[#C4912A] font-bold tracking-[.04em] mb-1.5">2014</div>
                 <div className="text-[13.5px] text-[#0E0B42]/70 leading-[1.65]">
-                  <strong className="text-[#0E0B42] font-bold">Senior In-House Counsel</strong>, growth-stage & mid-market companies
+                  <strong className="text-[#0E0B42] font-bold">In-house legal counsel</strong>, Healthcare, Health tech & Pharma
                 </div>
               </div>
-              <div className="grid grid-cols-[110px_1fr] gap-5 py-4.5 border-b border-[#0E0B42]/10">
-                <div className="text-[12px] text-[#C4912A] font-bold tracking-[.04em] pt-0.5">2014 - 2018</div>
+              <div className="relative pl-6 md:pl-8">
+                <span className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-[#C4912A] ring-4 ring-white" />
+                <div className="text-[12px] text-[#C4912A] font-bold tracking-[.04em] mb-1.5">2012</div>
                 <div className="text-[13.5px] text-[#0E0B42]/70 leading-[1.65]">
-                  <strong className="text-[#0E0B42] font-bold">Associate</strong>, corporate law firm - M&A, contracts, regulatory
-                </div>
-              </div>
-              <div className="grid grid-cols-[110px_1fr] gap-5 py-4.5">
-                <div className="text-[12px] text-[#C4912A] font-bold tracking-[.04em] pt-0.5">2012 - 2014</div>
-                <div className="text-[13.5px] text-[#0E0B42]/70 leading-[1.65]">
-                  <strong className="text-[#0E0B42] font-bold">LL.B.</strong> - enrolled with Bar Council of Karnataka
+                  <strong className="text-[#0E0B42] font-bold">LL.B.</strong> Enrolled with Bar Council of Karnataka
                 </div>
               </div>
             </div>
+
           </div>
         </div>
         
@@ -83,7 +83,7 @@ export default function About(): JSX.Element {
               <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Product companies, B2B SaaS, and tech-enabled services</p>
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
-              <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Healthcare & MedTech</div>
+              <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Healthcare</div>
               <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Regulated sector with compliance-heavy decisions</p>
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
@@ -94,10 +94,7 @@ export default function About(): JSX.Element {
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Real Estate</div>
               <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Developers, operators, and property needs</p>
             </div>
-            <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
-              <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Financial Services</div>
-              <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Fintech, NBFCs, and investment businesses</p>
-            </div>
+            
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Professional Services</div>
               <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Consulting firms, agencies, and service businesses</p>

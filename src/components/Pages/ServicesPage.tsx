@@ -7,9 +7,8 @@ const servicesData = [
     num: "01 — Corporate Advisory & Structuring",
     title: "Getting the foundation right.",
     sub: "Entity setup · Shareholder agreements · Governance · Restructuring",
-    desc1: "The structure of your company shapes everything downstream from how investors come in to how founders exit. FCC advises on entity setup, shareholder agreements, governance, and restructuring with the goal of building something that holds up as the business grows.",
-    desc2: "Whether you are setting up for the first time or untangling structures that no longer serve the business, the foundation matters more than most founders realise until something breaks.",
-    tags: ["Private Limited Companies", "LLPs", "Shareholder Agreements", "ESOP Structuring", "Board Governance"]
+    desc1: "At FCC, our work goes well beyond drafting contracts and documentation. We work closely with founders, leadership teams, and business teams to understand the full context of what they are building — advising on transaction structuring, day-to-day operational matters, and pre-litigation dispute resolution. Our goal is to keep your business protected and moving forward at every stage.",
+    tags: ["Operational advisory", " Pre-litigation dispute resolution", "Transaction structuring"]
   },
   {
     num: "02 — Contracts & Commercial Agreements",
@@ -17,7 +16,7 @@ const servicesData = [
     sub: "Drafting · Review · Negotiation · Dispute prevention",
     desc1: "Contracts are the operating layer of any business. FCC drafts, reviews, and negotiates commercial agreements with a focus on clarity, enforceability, and protecting your interests  without making it impossible to do business.",
     desc2: "A well-drafted contract is the cheapest form of dispute resolution. Most problems that end up in litigation started with a contract that didn't say what both sides thought it did.",
-    tags: ["Vendor Agreements", "Client MSAs", "SaaS Contracts", "Employment Agreements", "NDAs"]
+    tags: ["Channel partner agreements", "Software licensing agreements", "Commercial lease agreements", " Collaboration agreements", "Franchise agreements"]
   },
   {
     num: "03 — Transactions & Deals",
@@ -25,7 +24,7 @@ const servicesData = [
     sub: "Fundraising · Acquisitions · JVs · Term sheets",
     desc1: "Whether you are raising a round, acquiring a business, or entering a joint venture, the legal work around the deal determines how clean and durable the outcome is. FCC supports founders through the full transaction lifecycle from term sheet review to closing documentation.",
     desc2: "Deals have momentum. FCC is built to move with that momentum, not against it while making sure the protections are actually in place.",
-    tags: ["Seed & Pre-Series A", "Term Sheet Review", "SHA / SSA Drafting", "Due Diligence Support", "Asset Acquisitions"]
+    tags: ["Seed & Pre-Series A", "Term Sheet Review", "SHA / SSA Drafting", "Due Diligence Support"]
   },
   {
     num: "04 — Real Estate & Premises",
@@ -33,16 +32,9 @@ const servicesData = [
     sub: "Leases · Warehouse agreements · Property documentation",
     desc1: "Office leases, warehouse agreements, and property acquisitions involve more legal risk than most businesses expect. FCC reviews, drafts, and negotiates real estate documentation with a focus on protecting your operational and financial interests.",
     desc2: "The fine print in a commercial lease often comes back in the form of locked-in costs, unclear exit clauses, or liability for fixtures. FCC catches it before you sign.",
-    tags: ["Commercial Leases", "Leave & Licence", "Warehouse & Logistics", "Property Due Diligence"]
+    tags: ["Commercial Leases", "Leave & Licence", "Warehouse & Logistics", "Property documentation", "Sale deeds", "Turnkey agreements", "Artist agreements", "Production house agreements"]
   },
-  {
-    num: "05 — Fractional General Counsel",
-    title: "Senior legal leadership, without the full-time hire.",
-    sub: "Embedded counsel · Strategic advisory · Ongoing support",
-    desc1: "For businesses that need more than occasional advice but are not ready for a full-time in-house counsel, FCC's Fractional GC model provides embedded legal leadership. Sathwik works alongside your team, understands your business in depth, and gives you the kind of counsel that used to require a full-time hire.",
-    desc2: "This is not a retainer for quick queries. It is a model for businesses that want legal thinking embedded in how they operate available at the table, not just when something goes wrong.",
-    tags: ["Monthly Engagement", "Strategic Legal Review", "Contract Calendar", "HR Legal Support"]
-  }
+  
 ];
 
 export default function ServicesPage(): JSX.Element {

@@ -1,16 +1,7 @@
-import React, { JSX, useState, useEffect } from 'react';
+import React, { JSX } from 'react';
 import { Link } from 'react-router-dom';
-import profileUrl from '../../assets/SathwikPortfolio.jpg';
 
 export default function Home(): JSX.Element {
-  // Array of images to cycle through
-  const founderImages = [
-    profileUrl, 
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&h=300&fit=crop", 
-    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=300&h=300&fit=crop", 
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300&h=300&fit=crop"
-  ];
-
   const marqueeItems = [
     'Corporate Advisory',
     'Contracts & Commercial',
@@ -19,24 +10,6 @@ export default function Home(): JSX.Element {
     'Fractional GC',
     'Bengaluru &middot; Serving founders across India'
   ];
-
-  const founders = [
-    { id: 1, t: '30%', r: '22%', size: 'md:w-48 md:h-48 w-28 h-28', delay: '0s' }, // HUB
-    { id: 2, t: '5%', r: '10%', size: 'md:w-36 md:h-36 w-20 h-20', delay: '1.5s' },
-    { id: 3, t: '8%', r: '35%', size: 'md:w-28 md:h-28 w-16 h-16', delay: '3s' },
-    { id: 4, t: '25%', r: '42%', size: 'md:w-24 md:h-24 w-14 h-14', delay: '0.8s' },
-    { id: 5, t: '52%', r: '38%', size: 'md:w-32 md:h-32 w-18 h-18', delay: '2.2s' },
-    { id: 6, t: '55%', r: '10%', size: 'md:w-40 md:h-40 w-24 h-24', delay: '4s' },
-  ];
-
-  const [imgIndex, setImgIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setImgIndex((prev) => (prev + 1) % founderImages.length);
-    }, 5000); // Image swap frequency
-    return () => clearInterval(interval);
-  }, []);
 
   // Brand Colors: Navy: #0E0B42, Gold: #C4912A
 
@@ -53,13 +26,6 @@ export default function Home(): JSX.Element {
             width: max-content;
             animation: marquee 30s linear infinite;
           }
-          @keyframes float {
-            0%, 100% { transform: translateY(0px) translateX(0px); }
-            50% { transform: translateY(-15px) translateX(8px); }
-          }
-          .animate-float {
-            animation: float 7s ease-in-out infinite;
-          }
           @keyframes linePulse {
             0% { stroke-dashoffset: 1000; opacity: 0.1; }
             50% { opacity: 0.3; }
@@ -69,44 +35,11 @@ export default function Home(): JSX.Element {
             stroke-dasharray: 1000;
             animation: linePulse 15s linear infinite;
           }
-
-          /* New Non-Rotational "Ken Burns" Zoom & Fade Animation */
-          @keyframes subtlyEvolve {
-            0% { 
-              transform: scale(1.0) translateX(0%); 
-              opacity: 0.8; 
-              filter: grayscale(100%); 
-            }
-            40% { 
-              transform: scale(1.15) translateX(-2%); 
-              opacity: 1; 
-              filter: grayscale(0%); 
-            }
-            50% { 
-              opacity: 0; 
-              transform: scale(1.15) translateX(-2%); 
-              filter: grayscale(0%); 
-            } /* Image swap point */
-            60% { 
-              transform: scale(1.15) translateX(-2%); 
-              opacity: 1; 
-              filter: grayscale(0%); 
-            }
-            100% { 
-              transform: scale(1.0) translateX(0%); 
-              opacity: 0.8; 
-              filter: grayscale(100%); 
-            }
-          }
-          .animate-subtle-evolve {
-            animation: subtlyEvolve 10s ease-in-out infinite;
-            transform-origin: center center;
-          }
         `}
       </style>
 
       {/* HERO SECTION */}
-      <section className="bg-[#0E0B42] relative min-h-[100vh] md:min-h-[850px] flex items-center overflow-hidden selection:bg-[#C4912A]/30 selection:text-white">
+      <section className="bg-[#0E0B42] relative min-h-[100vh] md:min-h-[850px] flex items-center overflow-hidden selection:bg-[#C4912A]/30 selection:text-white w-full">
         
         {/* VISUAL NETWORK LAYER */}
         <div className="absolute inset-0 z-0 pointer-events-none">
@@ -127,44 +60,17 @@ export default function Home(): JSX.Element {
               <path d="M 90% 5% L 65% 8% L 58% 25% L 62% 52% L 90% 55% Z" strokeWidth="0.5" strokeOpacity="0.1" />
             </g>
           </svg>
-
-          {founders.map((f, i) => (
-            <div
-              key={f.id}
-              className="absolute animate-float transition-all duration-700"
-              style={{
-                top: f.t,
-                right: f.r,
-                animationDelay: f.delay,
-              }}
-            >
-              <div className="relative">
-                <div className="absolute inset-[-20px] rounded-full bg-[#C4912A]/10 blur-3xl animate-pulse" />
-                <div className={`${f.size} rounded-full border-[1.5px] md:border-[2.5px] border-[#C4912A]/30 overflow-hidden relative shadow-[0_0_60px_rgba(196,145,42,0.15)] bg-[#0E0B42]`}>
-                  <div 
-                    className="w-full h-full bg-cover bg-center animate-subtle-evolve" 
-                    style={{ 
-                      backgroundImage: `url(${founderImages[(imgIndex + i) % founderImages.length]})`,
-                      animationDelay: f.delay // Offsets the movement AND the swap
-                    }} 
-                  />
-                  <div className="absolute inset-0 bg-[#0E0B42]/20 mix-blend-overlay" />
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
 
         {/* HERO CONTENT */}
-        <div className="max-w-[1440px] mx-auto pt-24 md:pt-[72px] px-6 md:px-12 pb-16 relative z-10 w-full">
-          <p className="text-[9px] md:text-[10.5px] tracking-[.24em] uppercase text-white/50 font-bold mb-6 flex items-center gap-3 before:content-[''] before:block before:w-5 md:before:w-7 before:h-px before:bg-[#C4912A]/40">
-            Advocates &amp; Legal Advisors &nbsp;&middot;&nbsp; Bengaluru
-          </p>
+        {/* UPDATED: Changed max-w-[1440px] to max-w-5xl and kept mx-auto to center it */}
+        <div className="max-w-5xl mx-auto pt-24 md:pt-[72px] px-6 md:px-12 pb-16 relative z-10 w-full">
+          
           <h1 className="font-['Cormorant_Garamond',serif] text-[clamp(40px,7.5vw,84px)] text-white leading-[1.1] md:leading-[1.02] font-bold tracking-[-.01em] mb-6 max-w-[850px]">
             Legal strategy for founders<br className="hidden sm:block" />who want to <em className="text-[#C4912A] italic font-normal">move fast.</em>
           </h1>
           <p className="text-[14px] md:text-[15px] text-white/65 leading-[1.7] md:leading-[1.8] max-w-[520px] mb-9 font-light">
-            12+ years of in-house and private practice experience &middot; now available to the founders and businesses that need it most.
+            Protecting founders and emerging businesses from 0 to 1
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-5 mb-16">
             <Link to="/services" className="w-full sm:w-auto text-center bg-[#C4912A] hover:bg-[#C4912A]/90 text-white py-[13px] px-[30px] text-[11px] md:text-[11.5px] font-bold tracking-[.1em] uppercase transition-all border border-[#C4912A] shadow-lg shadow-[#C4912A]/10">
@@ -178,16 +84,16 @@ export default function Home(): JSX.Element {
           {/* STATS SECTION */}
           <div className="flex flex-row border-t border-white/10 w-full overflow-x-auto no-scrollbar pt-2">
             <div className="py-5 pr-8 md:pr-12 mr-8 md:mr-12 border-r border-white/10 flex gap-3.5 items-baseline whitespace-nowrap">
-              <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] text-white font-bold leading-none">12+</div>
-              <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">Years in-house &middot; private practice</div>
+              <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] text-white font-bold leading-none">13+</div>
+              <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">years corporate legal and advisory experience</div>
             </div>
             <div className="py-5 pr-8 md:pr-12 mr-8 md:mr-12 border-r border-white/10 flex gap-3.5 items-baseline whitespace-nowrap">
-              <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] text-white font-bold leading-none">5</div>
-              <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">Core practice areas</div>
+
+              <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">Founder focused</div>
             </div>
             <div className="py-5 flex gap-3.5 items-baseline whitespace-nowrap">
-              <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] text-white font-bold leading-none">Est. 2024</div>
-              <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">Bengaluru &middot; Serving India</div>
+              <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] text-white font-bold leading-none">150+</div>
+              <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">businesses across India</div>
             </div>
           </div>
         </div>

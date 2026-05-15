@@ -5,7 +5,7 @@ interface ServiceCardProps {
   title: string;
   sub: string;
   desc1: string;
-  desc2: string;
+  desc2?: string;
   tags: string[];
   isOpen: boolean;
   onToggle: () => void;
@@ -35,8 +35,10 @@ export default function ServiceCard({ num, title, sub, desc1, desc2, tags, isOpe
       </div>
       <div className={`transition-all duration-500 overflow-hidden ${isOpen ? 'max-h-[600px]' : 'max-h-0'}`}>
         <div className="pb-9">
-          <p className="text-[14px] leading-[1.9] text-[#0E0B42]/70 max-w-[720px] mb-3.5">{desc1}</p>
-          <p className="text-[14px] leading-[1.9] text-[#0E0B42]/70 max-w-[720px] mb-3.5">{desc2}</p>
+          <p className="text-[16px] leading-[1.9] text-[#0E0B42]/70 max-w-[720px] mb-3.5">{desc1}</p>
+          {desc2 && (
+            <p className="text-[16px] leading-[1.9] text-[#0E0B42]/70 max-w-[720px] mb-3.5">{desc2}</p>
+          )}
           <div className="flex flex-wrap gap-2 mt-5">
             {tags.map((tag, idx) => (
               <span key={idx} className="text-[11px] tracking-[.06em] uppercase text-[#0E0B42] bg-[#C4912A]/10 py-1.5 px-3.5 font-semibold rounded-[2px]">{tag}</span>
