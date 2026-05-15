@@ -35,9 +35,10 @@ export default function ServiceCard({ num, title, sub, desc1, desc2, tags, isOpe
       </div>
       <div className={`transition-all duration-500 overflow-hidden ${isOpen ? 'max-h-[600px]' : 'max-h-0'}`}>
         <div className="pb-9">
-          <p className="text-[16px] leading-[1.9] text-[#0E0B42]/70 max-w-[720px] mb-3.5">{desc1}</p>
+          {/* max-w-full applied and em-dashes removed from logic (passed via props) */}
+          <p className="text-[16px] leading-[1.9] text-[#0E0B42]/70 max-w-full mb-3.5">{desc1.replace(/—/g, ':')}</p>
           {desc2 && (
-            <p className="text-[16px] leading-[1.9] text-[#0E0B42]/70 max-w-[720px] mb-3.5">{desc2}</p>
+            <p className="text-[16px] leading-[1.9] text-[#0E0B42]/70 max-w-full mb-3.5">{desc2.replace(/—/g, ':')}</p>
           )}
           <div className="flex flex-wrap gap-2 mt-5">
             {tags.map((tag, idx) => (

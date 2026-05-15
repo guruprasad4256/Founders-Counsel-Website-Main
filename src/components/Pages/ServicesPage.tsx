@@ -4,22 +4,22 @@ import ServiceCard from '../../components/sections/ServiceCard';
 
 const servicesData = [
   {
-    num: "01 — Corporate Advisory & Structuring",
+    num: "01 : Corporate Advisory & Structuring",
     title: "Getting the foundation right.",
     sub: "Entity setup · Shareholder agreements · Governance · Restructuring",
     desc1: "At FCC, our work goes well beyond drafting contracts and documentation. We work closely with founders, leadership teams, and business teams to understand the full context of what they are building — advising on transaction structuring, day-to-day operational matters, and pre-litigation dispute resolution. Our goal is to keep your business protected and moving forward at every stage.",
     tags: ["Operational advisory", " Pre-litigation dispute resolution", "Transaction structuring"]
   },
   {
-    num: "02 — Contracts & Commercial Agreements",
+    num: "02 : Contracts & Commercial Agreements",
     title: "Agreements that reflect what you actually agreed.",
     sub: "Drafting · Review · Negotiation · Dispute prevention",
-    desc1: "Contracts are the operating layer of any business. FCC drafts, reviews, and negotiates commercial agreements with a focus on clarity, enforceability, and protecting your interests  without making it impossible to do business.",
+    desc1: "Contracts are the operating layer of any business. FCC drafts, reviews, and negotiates commercial agreements with a focus on clarity, enforceability, and protecting your interests without making it impossible to do business.",
     desc2: "A well-drafted contract is the cheapest form of dispute resolution. Most problems that end up in litigation started with a contract that didn't say what both sides thought it did.",
     tags: ["Channel partner agreements", "Software licensing agreements", "Commercial lease agreements", " Collaboration agreements", "Franchise agreements"]
   },
   {
-    num: "03 — Transactions & Deals",
+    num: "03 : Transactions & Deals",
     title: "Deals done right.",
     sub: "Fundraising · Acquisitions · JVs · Term sheets",
     desc1: "Whether you are raising a round, acquiring a business, or entering a joint venture, the legal work around the deal determines how clean and durable the outcome is. FCC supports founders through the full transaction lifecycle from term sheet review to closing documentation.",
@@ -27,7 +27,7 @@ const servicesData = [
     tags: ["Seed & Pre-Series A", "Term Sheet Review", "SHA / SSA Drafting", "Due Diligence Support"]
   },
   {
-    num: "04 — Real Estate & Premises",
+    num: "04 : Real Estate & Premises",
     title: "Premises without the problems.",
     sub: "Leases · Warehouse agreements · Property documentation",
     desc1: "Office leases, warehouse agreements, and property acquisitions involve more legal risk than most businesses expect. FCC reviews, drafts, and negotiates real estate documentation with a focus on protecting your operational and financial interests.",
@@ -56,11 +56,11 @@ export default function ServicesPage(): JSX.Element {
         <h1 className="font-['Cormorant_Garamond',serif] text-[clamp(38px,5.5vw,70px)] text-white font-bold leading-none tracking-[-.01em]">
           Five practice areas.<br /><em className="text-[#C4912A] italic font-normal">One standard of work.</em>
         </h1>
-        <p className="text-[14px] text-white/60 mt-5 max-w-[540px] leading-[1.8] font-light">Each service reflects the real legal needs of businesses at the stage FCC is built to serve.</p>
+        <p className="text-[15px] text-white/60 mt-5 max-w-[540px] leading-[1.8] font-light">Each service reflects the real legal needs of businesses at the stage FCC is built to serve.</p>
       </div>
 
-      {/* SERVICES LIST */}
-      <div className="bg-white max-w-[1160px] mx-auto py-12 px-6 md:px-12">
+      {/* SERVICES LIST - Updated max-w-[1160px] to max-w-full */}
+      <div className="bg-white max-w-full mx-auto py-12 px-6 md:px-12">
         {servicesData.map((svc, idx) => (
           <ServiceCard 
             key={idx} 
@@ -81,22 +81,22 @@ export default function ServicesPage(): JSX.Element {
           <div className="bg-[#FAF8F4] p-7 hover:bg-white transition-colors">
             <div className="font-['Cormorant_Garamond',serif] text-[36px] text-[#0E0B42]/10 font-bold mb-2.5">01</div>
             <div className="font-['Cormorant_Garamond',serif] text-[21px] text-[#0E0B42] font-bold mb-2.5">Matter-Specific Engagement</div>
-            <p className="text-[13.5px] text-[#0E0B42]/70 leading-[1.75]">A specific matter—a contract to review, a dispute to resolve, a deal to close. Scoped, priced, and delivered start to finish.</p>
+            <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.75]">A specific matter: a contract to review, a dispute to resolve, a deal to close. Scoped, priced, and delivered start to finish.</p>
           </div>
           <div className="bg-[#FAF8F4] p-7 hover:bg-white transition-colors">
             <div className="font-['Cormorant_Garamond',serif] text-[36px] text-[#0E0B42]/10 font-bold mb-2.5">02</div>
             <div className="font-['Cormorant_Garamond',serif] text-[21px] text-[#0E0B42] font-bold mb-2.5">Fractional GC</div>
-            <p className="text-[13.5px] text-[#0E0B42]/70 leading-[1.75]">An ongoing engagement where Sathwik functions as your embedded general counsel available for day-to-day queries, reviews, and strategic decisions. Billed monthly.</p>
+            <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.75]">An ongoing engagement where Sathwik functions as your embedded general counsel available for day-to-day queries, reviews, and strategic decisions. Billed monthly.</p>
           </div>
           <div className="bg-[#FAF8F4] p-7 hover:bg-white transition-colors">
             <div className="font-['Cormorant_Garamond',serif] text-[36px] text-[#0E0B42]/10 font-bold mb-2.5">03</div>
             <div className="font-['Cormorant_Garamond',serif] text-[21px] text-[#0E0B42] font-bold mb-2.5">Transaction Support</div>
-            <p className="text-[13.5px] text-[#0E0B42]/70 leading-[1.75]">Full-cycle support for a fundraise, acquisition, or significant commercial deal from term sheet to closing.</p>
+            <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.75]">Full-cycle support for a fundraise, acquisition, or significant commercial deal from term sheet to closing.</p>
           </div>
           <div className="bg-[#FAF8F4] p-7 hover:bg-white transition-colors">
             <div className="font-['Cormorant_Garamond',serif] text-[36px] text-[#0E0B42]/10 font-bold mb-2.5">04</div>
-            <div className="font-['Cormorant_Garamond',serif] text-[21px] text-[#0E0B42] font-bold mb-2.5">Legal Audit &amp; Review</div>
-            <p className="text-[13.5px] text-[#0E0B42]/70 leading-[1.75]">A structured review of your contracts and legal position identifying risk before it surfaces. Useful before a fundraise or significant new engagement.</p>
+            <div className="font-['Cormorant_Garamond',serif] text-[21px] text-[#0E0B42] font-bold mb-2.5">Legal Audit & Review</div>
+            <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.75]">A structured review of your contracts and legal position identifying risk before it surfaces. Useful before a fundraise or significant new engagement.</p>
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function ServicesPage(): JSX.Element {
           <div className="font-['Cormorant_Garamond',serif] text-[clamp(26px,3vw,42px)] text-white font-bold leading-[1.25] mb-4">
             Not sure which model fits?<br /><em className="text-[#C4912A] italic font-normal">Let's find out.</em>
           </div>
-          <p className="text-[13.5px] text-white/55 leading-[1.7] max-w-[480px]">A short conversation is usually enough to identify the right starting point.</p>
+          <p className="text-[14.5px] text-white/55 leading-[1.7] max-w-[480px]">A short conversation is usually enough to identify the right starting point.</p>
         </div>
         <Link to="/contact" className="bg-[#C4912A] hover:bg-[#C4912A]/90 text-white py-3.5 px-8 text-[12px] font-bold tracking-[.1em] uppercase inline-block transition-colors border border-[#C4912A]">Get in Touch</Link>
       </div>

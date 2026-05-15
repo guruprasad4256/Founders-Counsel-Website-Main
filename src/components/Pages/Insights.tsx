@@ -28,11 +28,13 @@ export default function Insights(): JSX.Element {
           <div className="h-px w-8 bg-[#C4912A]/30"></div>
         </div>
         
-        <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[580px] mb-4">
+        {/* Updated from 14.5px to 15.5px */}
+        <p className="text-[15.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[580px] mb-4">
           Sathwik writes on the legal questions founders actually face structuring decisions, contract red flags, what to look out for when raising, and how to handle common disputes.
         </p>
         
-        <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[580px]">
+        {/* Updated from 14.5px to 15.5px */}
+        <p className="text-[15.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[580px]">
           Articles and notes will be published here. In the meantime, follow updates on {' '}
           <Link 
             to="https://in.linkedin.com/in/sathwikputta" 

@@ -115,7 +115,8 @@ export default function Contact(): JSX.Element {
               Let's talk about<br />
               <em className="text-[#C4912A] italic font-normal">your matter.</em>
             </h1>
-            <p className="text-[14px] text-white/60 leading-[1.8] max-w-[360px] font-light">
+            {/* Updated from 14px to 15px */}
+            <p className="text-[15px] text-white/60 leading-[1.8] max-w-[360px] font-light">
               No commitment required. A short conversation is usually enough to understand whether FCC can help and how.
             </p>
             

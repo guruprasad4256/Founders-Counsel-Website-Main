@@ -49,7 +49,8 @@ export default function Work(): JSX.Element {
           Real matters.<br />
           <em className="text-[#C4912A] italic font-normal">Real outcomes.</em>
         </h1>
-        <p className="text-[14px] text-white/60 mt-5 max-w-[500px] leading-[1.8] font-light">
+        {/* Updated to 15px */}
+        <p className="text-[15px] text-white/60 mt-5 max-w-[500px] leading-[1.8] font-light">
           Details anonymised to protect client confidentiality.
         </p>
       </div>
@@ -78,7 +79,8 @@ export default function Work(): JSX.Element {
           <div className="font-['Cormorant_Garamond',serif] text-[clamp(26px,3vw,42px)] text-white font-bold leading-[1.25] mb-4">
             Have a matter that needs <em className="text-[#C4912A] italic font-normal">careful handling?</em>
           </div>
-          <p className="text-[13.5px] text-white/55 leading-[1.7] max-w-[480px]">
+          {/* Updated from 14.5px to 15px */}
+          <p className="text-[15px] text-white/55 leading-[1.7] max-w-[480px]">
             Every engagement starts with a conversation, not a commitment.
           </p>
         </div>

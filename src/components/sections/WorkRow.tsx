@@ -37,7 +37,7 @@ export default function WorkRow({
           </div>
         </div>
         <div className={`text-[24px] font-light transition-colors shrink-0 ${isOpen ? 'text-[#C4912A]' : 'text-[#0E0B42]/20 group-hover:text-[#C4912A]'}`}>
-          {isOpen ? '−' : '+'}
+          {isOpen ? '-' : '+'}
         </div>
       </div>
       
@@ -46,17 +46,20 @@ export default function WorkRow({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-4">
           <div>
             <div className="text-[10.5px] tracking-[.18em] uppercase text-[#0E0B42]/40 font-bold mb-3">Situation</div>
-            <p className="text-[13.5px] text-[#0E0B42]/70 leading-[1.8]">{situation}</p>
+            {/* Updated from 13.5px to 15px */}
+            <p className="text-[15px] text-[#0E0B42]/70 leading-[1.8] max-w-full">{situation}</p>
           </div>
           <div>
             <div className="text-[10.5px] tracking-[.18em] uppercase text-[#0E0B42]/40 font-bold mb-3">What FCC Did</div>
-            <p className="text-[13.5px] text-[#0E0B42]/70 leading-[1.8]">{action}</p>
+            {/* Updated from 13.5px to 15px */}
+            <p className="text-[15px] text-[#0E0B42]/70 leading-[1.8] max-w-full">{action}</p>
           </div>
         </div>
         
         <div className="bg-[#C4912A]/10 border-l-[3px] border-[#C4912A] py-5 px-6 mt-8">
           <div className="text-[10px] tracking-[.18em] uppercase text-[#C4912A] font-bold mb-2">Outcome</div>
-          <div className="text-[13.5px] text-[#0E0B42] font-semibold leading-[1.65] italic">
+          {/* Updated from 13.5px to 15px */}
+          <div className="text-[15px] text-[#0E0B42] font-semibold leading-[1.65] italic max-w-full">
             {outcome}
           </div>
         </div>

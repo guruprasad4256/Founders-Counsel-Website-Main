@@ -25,11 +25,13 @@ export default function Careers(): JSX.Element {
         </p>
         
         <div className="space-y-6">
-          <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[620px]">
+          {/* Updated from 14.5px to 15.5px */}
+          <p className="text-[15.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[620px]">
             FCC is a boutique practice and we hire selectively. We look for lawyers who think clearly, write well, and are genuinely interested in the commercial context behind legal questions.
           </p>
           
-          <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[620px]">
+          {/* Updated from 14.5px to 15.5px */}
+          <p className="text-[15.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[620px]">
             If you are a law graduate or junior associate interested in corporate and commercial work, write to us at {' '}
             <a href="mailto:contact@founderscounsel.co" className="text-[#0E0B42] font-bold border-b border-[#C4912A]/30 pb-0.5">
               contact@founderscounsel.co
@@ -37,7 +39,8 @@ export default function Careers(): JSX.Element {
             with a brief note about yourself.
           </p>
           
-          <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[620px]">
+          {/* Updated from 14.5px to 15.5px */}
+          <p className="text-[15.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[620px]">
             We do not have open positions listed at all times. If there is a fit, we will find a way to make it work.
           </p>
         </div>
