@@ -31,11 +31,11 @@ export default function Disclaimer(): JSX.Element | null {
 
         <h3 className="font-['Cormorant_Garamond',serif] text-[22px] text-[#0E0B42] mb-4">Disclaimer</h3>
         
-        <p className="text-[12.5px] leading-[1.9] text-[#0E0B42]/80 mb-4">
+        <p className="text-[14.5px] leading-[1.9] text-[#0E0B42]/80 mb-4">
           The Bar Council of India does not permit advertisement or solicitation by advocates in any form or manner. By accessing this website, you acknowledge and confirm that you are seeking information relating to Founder's Counsel &amp; Co of your own accord and that there has been no form of solicitation, advertisement or inducement.
         </p>
         
-        <p className="text-[12.5px] leading-[1.9] text-[#0E0B42]/80 mb-5">
+        <p className="text-[14.5px] leading-[1.9] text-[#0E0B42]/80 mb-5">
           The content of this website is for informational purposes only and should not be interpreted as soliciting or advertisement. No material or information provided on this website should be construed as legal advice.
         </p>
 

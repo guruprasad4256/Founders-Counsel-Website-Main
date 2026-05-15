@@ -21,7 +21,7 @@ export default function Navbar(): JSX.Element {
     "relative text-[11px] lg:text-[11.5px] tracking-[.08em] lg:tracking-[.09em] uppercase py-2 px-2.5 lg:px-4 font-medium transition-colors hover:text-[#0E0B42] after:content-[''] after:absolute after:-bottom-px after:left-2.5 lg:after:left-4 after:right-2.5 lg:after:right-4 after:h-[2px] after:bg-[#C4912A] after:origin-left after:transition-transform hover:after:scale-x-100";
 
   const mobileLinkStyle =
-    "block py-3.5 px-6 text-[12.5px] tracking-[.08em] uppercase text-[#0E0B42]/80 font-medium border-b border-[#C4912A]/20 hover:text-[#0E0B42] hover:bg-[#C4912A]/5 transition-colors";
+    "block py-3.5 px-6 text-[14.5px] tracking-[.08em] uppercase text-[#0E0B42]/80 font-medium border-b border-[#C4912A]/20 hover:text-[#0E0B42] hover:bg-[#C4912A]/5 transition-colors";
 
   const navItems = [
     { label: "Home", path: "/" },

@@ -70,7 +70,7 @@ export default function Home(): JSX.Element {
           <h1 className="font-['Cormorant_Garamond',serif] text-[clamp(40px,7.5vw,84px)] text-white leading-[1.1] md:leading-[1.02] font-bold tracking-[-.01em] mb-6 max-w-[850px]">
             Legal strategy for founders<br className="hidden sm:block" />who want to <em className="text-[#C4912A] italic font-normal">move fast.</em>
           </h1>
-          <p className="text-[14px] md:text-[15px] text-white/65 leading-[1.7] md:leading-[1.8] max-w-[520px] mb-9 font-light">
+          <p className="text-[15px] md:text-[16px] text-white/65 leading-[1.7] md:leading-[1.8] max-w-[520px] mb-9 font-light">
             Protecting founders and emerging businesses from 0 to 1
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-5 mb-16">
@@ -86,17 +86,17 @@ export default function Home(): JSX.Element {
           <div className="flex flex-row border-t border-white/10 w-full overflow-x-auto no-scrollbar pt-2">
             <div className="py-5 pr-8 md:pr-12 mr-8 md:mr-12 border-r border-white/10 flex gap-3.5 items-baseline whitespace-nowrap">
               <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] text-white font-bold leading-none">{experienceYears}+</div>
-              <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">years corporate legal and advisory experience</div>
+              <div className="text-[11px] md:text-[12.5px] text-white/50 leading-[1.4] font-medium">years corporate legal and advisory experience</div>
             </div>
             
             <div className="py-5 pr-8 md:pr-12 mr-8 md:mr-12 border-r border-white/10 flex items-baseline whitespace-nowrap">
               <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] leading-none select-none" aria-hidden="true">&#8203;</div>
-              <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">Founder focused</div>
+              <div className="text-[11px] md:text-[12.5px] text-white/50 leading-[1.4] font-medium">Founder focused</div>
             </div>
             
             <div className="py-5 flex gap-3.5 items-baseline whitespace-nowrap">
               <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] text-white font-bold leading-none">150+</div>
-              <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">businesses across India</div>
+              <div className="text-[11px] md:text-[12.5px] text-white/50 leading-[1.4] font-medium">businesses across India</div>
             </div>
           </div>
         </div>
@@ -154,10 +154,10 @@ export default function Home(): JSX.Element {
               <div className="font-['Cormorant_Garamond',serif] text-[32px] md:text-[42px] text-[#0E0B42]/10 font-bold leading-none mb-4 md:mb-0 md:pt-1">{w.n}</div>
               <div className="md:pr-12 md:border-r border-[#0E0B42]/10 mb-6 md:mb-0">
                 <div className="font-['Cormorant_Garamond',serif] text-[19px] md:text-[20px] text-[#0E0B42] font-bold mb-3 leading-[1.2]">{w.t}</div>
-                <p className="text-[13px] md:text-[13.5px] text-[#0E0B42]/70 leading-[1.7] md:leading-[1.8]">{w.b}</p>
+                <p className="text-[14px] md:text-[14.5px] text-[#0E0B42]/70 leading-[1.7] md:leading-[1.8]">{w.b}</p>
               </div>
               <div className="md:pl-12">
-                <p className="text-[13px] md:text-[13.5px] text-[#0E0B42]/70 leading-[1.7] md:leading-[1.8]">{w.d}</p>
+                <p className="text-[14px] md:text-[14.5px] text-[#0E0B42]/70 leading-[1.7] md:leading-[1.8]">{w.d}</p>
               </div>
             </div>
           ))}
@@ -170,7 +170,7 @@ export default function Home(): JSX.Element {
           <div className="font-['Cormorant_Garamond',serif] text-[clamp(28px,5vw,42px)] text-white font-bold leading-[1.2] mb-4">
             Have a matter in mind?<br /><em className="text-[#C4912A] italic font-normal">Let's talk.</em>
           </div>
-          <p className="text-[13px] md:text-[13.5px] text-white/55 leading-[1.7] max-w-[480px]">No obligation. A short conversation is usually enough to understand whether FCC can help and how.</p>
+          <p className="text-[14px] md:text-[14.5px] text-white/55 leading-[1.7] max-w-[480px]">No obligation. A short conversation is usually enough to understand whether FCC can help and how.</p>
         </div>
         <Link to="/contact" className="w-full md:w-auto text-center bg-[#C4912A] hover:bg-[#C4912A]/90 text-white py-4 px-10 text-[11px] md:text-[12px] font-bold tracking-[.1em] uppercase transition-all border border-[#C4912A] shadow-lg shadow-[#C4912A]/10">
           Get in Touch

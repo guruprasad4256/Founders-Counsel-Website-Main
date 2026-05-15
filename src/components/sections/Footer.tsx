@@ -18,7 +18,7 @@ export default function Footer(): JSX.Element {
               Founder's Counsel <span className="text-[#C4912A]">&amp;</span> Co
             </div>
           </div>
-          <p className="text-[12.5px] text-white/50 leading-[1.7]">
+          <p className="text-[14.5px] text-white/50 leading-[1.7]">
             Corporate legal advisory for founders<br />and growing businesses.
           </p>
         </div>

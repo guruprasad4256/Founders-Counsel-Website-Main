@@ -27,7 +27,7 @@ export default function ServiceCard({ num, title, sub, desc1, desc2, tags, isOpe
           <div className={`font-['Cormorant_Garamond',serif] text-[clamp(20px,2.2vw,28px)] font-bold leading-[1.2] transition-colors ${isOpen ? 'text-[#0E0B42]' : 'text-[#0E0B42]/90 group-hover:text-[#0E0B42]'}`}>
             {title}
           </div>
-          <div className="text-[12.5px] text-[#0E0B42]/60 mt-1.5 tracking-[.01em]">{sub}</div>
+          <div className="text-[14.5px] text-[#0E0B42]/60 mt-1.5 tracking-[.01em]">{sub}</div>
         </div>
         <div className={`w-9 h-9 border rounded-full flex items-center justify-center shrink-0 transition-all duration-300 text-[18px] font-light leading-none ${isOpen ? 'bg-[#0E0B42] border-[#0E0B42] text-white rotate-45' : 'border-[#0E0B42]/20 text-[#0E0B42]/60'}`}>
           +

@@ -87,27 +87,27 @@ export default function About(): JSX.Element {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#0E0B42]/10 mt-9 border border-[#0E0B42]/10">
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Technology & SaaS</div>
-              <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Product companies, B2B SaaS, and tech-enabled services</p>
+              <p className="text-[14.5px] text-[#0E0B42]/60 leading-[1.6]">Product companies, B2B SaaS, and tech-enabled services</p>
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Real Estate</div>
-              <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Developers, operators, and property needs</p>
+              <p className="text-[14.5px] text-[#0E0B42]/60 leading-[1.6]">Developers, operators, and property needs</p>
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Healthcare</div>
-              <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Regulated sector with compliance-heavy decisions</p>
+              <p className="text-[14.5px] text-[#0E0B42]/60 leading-[1.6]">Regulated sector with compliance-heavy decisions</p>
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Media & Entertainment</div>
-              <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Artists, production houses, content platforms, and media businesses</p>
+              <p className="text-[14.5px] text-[#0E0B42]/60 leading-[1.6]">Artists, production houses, content platforms, and media businesses</p>
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Manufacturing</div>
-              <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Vendor contracts, supply chain documentation, premises</p>
+              <p className="text-[14.5px] text-[#0E0B42]/60 leading-[1.6]">Vendor contracts, supply chain documentation, premises</p>
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Others</div>
-              <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Consulting firms, agencies, and service businesses</p>
+              <p className="text-[14.5px] text-[#0E0B42]/60 leading-[1.6]">Consulting firms, agencies, and service businesses</p>
             </div>
           </div>
         </div>
