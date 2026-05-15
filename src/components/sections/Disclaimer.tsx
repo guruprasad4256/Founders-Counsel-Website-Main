@@ -13,7 +13,7 @@ export default function Disclaimer(): JSX.Element | null {
         {/* Logo and Brand Section */}
         <div className="font-['Cormorant_Garamond',serif] text-[18px] font-semibold text-[#0E0B42] tracking-[.04em] mb-8 flex items-center gap-3">
           <img src={logoUrl} alt="FCC" className="h-[44px] w-auto" />
-          <div>Founder's Counsel <span className="text-[#C4912A]">&amp; Co</span></div>
+          <div>Founder's Counsel <span className="text-[#C4912A]">&amp; </span>Co</div>
         </div>
 
         <h3 className="font-['Cormorant_Garamond',serif] text-[22px] text-[#0E0B42] mb-4">Disclaimer</h3>
