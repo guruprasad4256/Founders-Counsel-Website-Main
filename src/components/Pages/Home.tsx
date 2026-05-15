@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 
 export default function Home(): JSX.Element {
   const marqueeItems = [
-    'Corporate Advisory',
-    'Contracts & Commercial',
-    'Transactions & Deals',
+    'Technology & SaaS',
     'Real Estate',
-    'Fractional GC',
-    'Bengaluru &middot; Serving founders across India'
+    'Healthcare',
+    'Media & Entertainment',
+    'Manufacturing',
+    'Serving founders across India'
   ];
+
+  const experienceYears = new Date().getFullYear() - 2013;
 
   // Brand Colors: Navy: #0E0B42, Gold: #C4912A
 
@@ -39,7 +41,7 @@ export default function Home(): JSX.Element {
       </style>
 
       {/* HERO SECTION */}
-      <section className="bg-[#0E0B42] relative min-h-[100vh] md:min-h-[850px] flex items-center overflow-hidden selection:bg-[#C4912A]/30 selection:text-white w-full">
+      <section className="bg-[#0E0B42] relative flex items-center overflow-hidden selection:bg-[#C4912A]/30 selection:text-white w-full">
         
         {/* VISUAL NETWORK LAYER */}
         <div className="absolute inset-0 z-0 pointer-events-none">
@@ -63,8 +65,7 @@ export default function Home(): JSX.Element {
         </div>
 
         {/* HERO CONTENT */}
-        {/* UPDATED: Changed max-w-[1440px] to max-w-5xl and kept mx-auto to center it */}
-        <div className="max-w-5xl mx-auto pt-24 md:pt-[72px] px-6 md:px-12 pb-16 relative z-10 w-full">
+        <div className="max-w-5xl mx-auto pt-16 md:pt-20 px-6 md:px-12 pb-12 relative z-10 w-full">
           
           <h1 className="font-['Cormorant_Garamond',serif] text-[clamp(40px,7.5vw,84px)] text-white leading-[1.1] md:leading-[1.02] font-bold tracking-[-.01em] mb-6 max-w-[850px]">
             Legal strategy for founders<br className="hidden sm:block" />who want to <em className="text-[#C4912A] italic font-normal">move fast.</em>
@@ -84,13 +85,15 @@ export default function Home(): JSX.Element {
           {/* STATS SECTION */}
           <div className="flex flex-row border-t border-white/10 w-full overflow-x-auto no-scrollbar pt-2">
             <div className="py-5 pr-8 md:pr-12 mr-8 md:mr-12 border-r border-white/10 flex gap-3.5 items-baseline whitespace-nowrap">
-              <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] text-white font-bold leading-none">13+</div>
+              <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] text-white font-bold leading-none">{experienceYears}+</div>
               <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">years corporate legal and advisory experience</div>
             </div>
-            <div className="py-5 pr-8 md:pr-12 mr-8 md:mr-12 border-r border-white/10 flex gap-3.5 items-baseline whitespace-nowrap">
-
+            
+            <div className="py-5 pr-8 md:pr-12 mr-8 md:mr-12 border-r border-white/10 flex items-baseline whitespace-nowrap">
+              <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] leading-none select-none" aria-hidden="true">&#8203;</div>
               <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">Founder focused</div>
             </div>
+            
             <div className="py-5 flex gap-3.5 items-baseline whitespace-nowrap">
               <div className="font-['Cormorant_Garamond',serif] text-[28px] md:text-[36px] text-white font-bold leading-none">150+</div>
               <div className="text-[10px] md:text-[11.5px] text-white/50 leading-[1.4] font-medium">businesses across India</div>
@@ -101,7 +104,7 @@ export default function Home(): JSX.Element {
 
       {/* MARQUEE SECTION */}
       <div className="bg-[#0E0B42] py-3 md:py-[18px] border-t border-white/5 relative overflow-hidden">
-        <div className="animate-marquee">
+        <div className="animate-marquee items-center">
           {[...marqueeItems, ...marqueeItems].map((item, i) => (
             <React.Fragment key={i}>
               <span className="text-[10px] md:text-[11.5px] tracking-[.12em] uppercase text-white/55 font-bold whitespace-nowrap mx-4 md:mx-6" dangerouslySetInnerHTML={{ __html: item }}>

@@ -50,10 +50,6 @@ export default function Navbar(): JSX.Element {
       title: "Real Estate & Premises",
       sub: "Leases, property documentation",
     },
-    {
-      title: "Fractional GC",
-      sub: "Embedded legal leadership",
-    },
   ];
 
   return (

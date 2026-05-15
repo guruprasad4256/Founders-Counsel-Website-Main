@@ -33,7 +33,7 @@ export default function Footer(): JSX.Element {
 
         <div className="flex flex-col">
           <div className="text-[10px] tracking-[.2em] uppercase text-[#C4912A] font-semibold mb-4.5">Practice Areas</div>
-          {['Corporate Advisory', 'Contracts & Commercial', 'Transactions', 'Real Estate', 'Fractional GC'].map(svc => (
+          {['Corporate Advisory', 'Contracts & Commercial', 'Transactions', 'Real Estate'].map(svc => (
             <Link key={svc} to="/services" className="text-[13px] text-white/50 mb-2.5 hover:text-[#C4912A] transition-colors">{svc}</Link>
           ))}
         </div>

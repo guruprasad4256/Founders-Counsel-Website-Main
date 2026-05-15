@@ -25,7 +25,7 @@ export default function About(): JSX.Element {
             <h1 className="font-['Cormorant_Garamond',serif] text-[46px] text-white font-bold leading-none mb-1.5">Sathwik Putta</h1>
             <p className="text-[11px] tracking-[.18em] uppercase text-[#C4912A] font-bold mb-7">Founder & Chief Counsel</p>
             <div className="space-y-4 text-[14.5px] leading-[1.9] text-white/70 font-light">
-              <p>Sathwik Putta founded Founder's Counsel & Co after over 12 years working across in-house legal roles and private practice. His experience spans growth-stage startups, mid-market businesses, and transactions across sectors - giving him a ground-level understanding of how legal decisions play out inside real businesses.</p>
+              <p>Sathwik Putta founded Founder's Counsel & Co after over 13 years working across in-house legal roles and private practice. His experience spans growth-stage startups, mid-market businesses, and transactions across sectors - giving him a ground-level understanding of how legal decisions play out inside real businesses.</p>
               <p>FCC is built on a single conviction: that founders and growing businesses deserve the same quality of legal thinking that large corporates take for granted, without the overhead, the distance, or the billing structures that make good counsel feel inaccessible.</p>
               <p>Sathwik is an Advocate enrolled with the Bar Council of Karnataka and the Bar Council of India</p>
               <p>FCC works exclusively with founders, startups, and emerging businesses those in the 0-to-1 stage or early growth phase. This focus is intentional. It shapes how we work, how we price, and how we think.</p>

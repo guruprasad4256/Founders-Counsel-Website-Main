@@ -2,7 +2,20 @@ import React, { JSX, useState } from 'react';
 import logoUrl from '../../assets/FCCLogo.png';
 
 export default function Disclaimer(): JSX.Element | null {
-  const [show, setShow] = useState<boolean>(true);
+  const [show, setShow] = useState<boolean>(() => {
+    // Safely check localStorage when the component initializes
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('fcc_disclaimer_accepted') !== 'true';
+    }
+    return true;
+  });
+
+  const handleAccept = () => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('fcc_disclaimer_accepted', 'true');
+    }
+    setShow(false);
+  };
 
   if (!show) return null;
 
@@ -33,7 +46,7 @@ export default function Disclaimer(): JSX.Element | null {
 
         <button 
           className="bg-[#0E0B42] hover:bg-[#0E0B42]/90 text-white border-none py-[14px] px-8 text-[11.5px] font-semibold tracking-[.12em] uppercase cursor-pointer w-full transition-colors font-['Inter',sans-serif]"
-          onClick={() => setShow(false)}
+          onClick={handleAccept}
         >
           I Agree & Proceed to Website
         </button>
