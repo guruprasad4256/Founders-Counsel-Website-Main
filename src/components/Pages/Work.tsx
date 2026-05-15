@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import WorkRow from '../../components/sections/WorkRow'; 
 
 export default function Work(): JSX.Element {
-  // State to track which accordion is open (null means all closed)
-  const [openRowIndex, setOpenRowIndex] = useState<number | null>(null);
+  // State to track which accordion is open (initialized to 0 to keep first row open)
+  const [openRowIndex, setOpenRowIndex] = useState<number | null>(0);
 
   const toggleRow = (index: number) => {
-    setOpenRowIndex(prevIndex => (prevIndex === index ? null : index));
+    // Logic updated to ensure at least one row remains open at all times
+    setOpenRowIndex(index);
   };
 
   // Brand Colors: 

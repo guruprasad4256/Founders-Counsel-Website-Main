@@ -118,11 +118,7 @@ export default function Navbar(): JSX.Element {
           >
             Insights
           </Link>
-
-          <Link to="/blogs" className={`${navLinkStyle} ${isActive("/blogs")}`}>
-            Blogs
-          </Link>
-
+          
           <Link
             to="/careers"
             className={`${navLinkStyle} ${isActive("/careers")}`}

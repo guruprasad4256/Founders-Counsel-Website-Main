@@ -129,10 +129,7 @@ export default function Contact(): JSX.Element {
                 <div className="text-[10px] tracking-[.2em] uppercase text-[#C4912A] font-bold mb-1.5">Phone</div>
                 <a href="tel:+919480363788" className="text-[14px] text-white/80 font-medium block hover:text-white transition-colors">+91 94803 63788</a>
               </div>
-              <div>
-                <div className="text-[10px] tracking-[.2em] uppercase text-[#C4912A] font-bold mb-1.5">Office</div>
-                <div className="text-[14px] text-white/80 font-medium">Bengaluru, Karnataka, India</div>
-              </div>
+              
             </div>
           </div>
           
