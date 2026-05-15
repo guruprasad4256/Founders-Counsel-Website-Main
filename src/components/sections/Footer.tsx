@@ -19,7 +19,7 @@ export default function Footer(): JSX.Element {
             </div>
           </div>
           <p className="text-[12.5px] text-white/50 leading-[1.7]">
-            Corporate legal advisory for founders<br />and growing businesses. Bengaluru.
+            Corporate legal advisory for founders<br />and growing businesses.
           </p>
         </div>
 

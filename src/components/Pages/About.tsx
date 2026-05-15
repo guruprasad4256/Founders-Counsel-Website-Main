@@ -27,7 +27,8 @@ export default function About(): JSX.Element {
             <div className="space-y-4 text-[14.5px] leading-[1.9] text-white/70 font-light">
               <p>Sathwik Putta founded Founder's Counsel & Co after over 12 years working across in-house legal roles and private practice. His experience spans growth-stage startups, mid-market businesses, and transactions across sectors - giving him a ground-level understanding of how legal decisions play out inside real businesses.</p>
               <p>FCC is built on a single conviction: that founders and growing businesses deserve the same quality of legal thinking that large corporates take for granted, without the overhead, the distance, or the billing structures that make good counsel feel inaccessible.</p>
-              <p>Sathwik is an advocate enrolled with the Bar Council of Karnataka and practices primarily in Bengaluru, advising clients across India.</p>
+              <p>Sathwik is an Advocate enrolled with the Bar Council of Karnataka and the Bar Council of India</p>
+              <p>FCC works exclusively with founders, startups, and emerging businesses those in the 0-to-1 stage or early growth phase. This focus is intentional. It shapes how we work, how we price, and how we think.</p>
             </div>
           </div>
         </div>
@@ -68,8 +69,14 @@ export default function About(): JSX.Element {
                 </div>
               </div>
             </div>
-
           </div>
+        </div>
+
+        {/* HOW IT WORKS SECTION */}
+        <div className="p-6 md:p-12 border-b border-[#0E0B42]/10">
+          <div className="text-[11px] tracking-[.2em] uppercase text-[#C4912A] font-bold mb-5">How It Works</div>
+          <h3 className="font-['Cormorant_Garamond',serif] text-[24px] text-[#0E0B42] mb-4.5 font-bold leading-[1.2]">FCC is built to deliver consistently and efficiently.</h3>
+          <p className="text-[14px] leading-[1.85] text-[#0E0B42]/70">We use AI-powered systems and automation for process-heavy and routine legal work — freeing our human attention for what matters most: sound legal judgment, strategic advice, and the decisions that shape your business.</p>
         </div>
         
         <div className="bg-[#FAF8F4] py-12 px-6 md:px-[52px]">
@@ -83,20 +90,23 @@ export default function About(): JSX.Element {
               <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Product companies, B2B SaaS, and tech-enabled services</p>
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
+              <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Real Estate</div>
+              <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Developers, operators, and property needs</p>
+            </div>
+            <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Healthcare</div>
               <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Regulated sector with compliance-heavy decisions</p>
+            </div>
+            <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
+              <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Media & Entertainment</div>
+              <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Artists, production houses, content platforms, and media businesses</p>
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Manufacturing</div>
               <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Vendor contracts, supply chain documentation, premises</p>
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
-              <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Real Estate</div>
-              <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Developers, operators, and property needs</p>
-            </div>
-            
-            <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
-              <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Professional Services</div>
+              <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Others</div>
               <p className="text-[12.5px] text-[#0E0B42]/60 leading-[1.6]">Consulting firms, agencies, and service businesses</p>
             </div>
           </div>
@@ -108,7 +118,9 @@ export default function About(): JSX.Element {
               <span className="text-[11px] tracking-[.22em] uppercase text-[#C4912A] font-bold block mb-2">What Clients Say</span>
               <h2 className="font-['Cormorant_Garamond',serif] text-[clamp(28px,3vw,40px)] text-white font-bold leading-[1.2]">Trusted by founders, MSMEs and growing businesses.</h2>
             </div>
-            <TestimonialCarousel />
+            <div className="mt-10 w-full min-w-0 relative block">
+              <TestimonialCarousel />
+            </div>
           </div>
         </div>
       </div>

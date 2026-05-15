@@ -29,7 +29,7 @@ export default function Insights(): JSX.Element {
         </div>
         
         <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[580px] mb-4">
-          Sathwik writes on the legal questions founders actually face — structuring decisions, contract red flags, what to look out for when raising, and how to handle common disputes.
+          Sathwik writes on the legal questions founders actually face structuring decisions, contract red flags, what to look out for when raising, and how to handle common disputes.
         </p>
         
         <p className="text-[14.5px] text-[#0E0B42]/70 leading-[1.9] max-w-[580px]">
