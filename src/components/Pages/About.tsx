@@ -1,6 +1,7 @@
 import React, { JSX } from 'react';
 import { Link } from 'react-router-dom';
 import TestimonialCarousel from '../sections/TestimonialCarousel';
+import SpeakingEvents from '../sections/AboutEvents'; // <-- Imported the new component
 import profileUrl from '../../assets/SathwikPortfolio.jpg'; 
 
 export default function About(): JSX.Element {
@@ -72,6 +73,11 @@ export default function About(): JSX.Element {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* SPEAKING & EVENTS SECTION (Imported Component) */}
+        <div className="border-b border-[#0E0B42]/10">
+          <SpeakingEvents />
         </div>
 
         {/* HOW IT WORKS SECTION */}
