@@ -20,7 +20,7 @@ const eventsData = [
     context: 'EChai · Draper Startup House',
     title: 'Navigating Legal Milestones as a Founder',
     meta: 'Bengaluru',
-    description: 'A panel discussion on the fundamentals every founder must get right — covering cash flow discipline, cap tables, ESOPs, and legal documentation. Organised by The Startup Zone as a free legal and compliance clinic for early-stage founders.',
+    description: 'A panel discussion on the fundamentals every founder must get right covering cash flow discipline, cap tables, ESOPs, and legal documentation. Organised by The Startup Zone as a free legal and compliance clinic for early-stage founders.',
     footer: 'With: Sharath Shyamasunder · Sandeep Kumar'
   },
   {
@@ -32,7 +32,7 @@ const eventsData = [
     context: 'The Startup Zone (TSZ)',
     title: "Founder's Guild 2026",
     meta: 'Bengaluru',
-    description: 'A gathering of founders, operators, and advisors — focused on collaboration, connections, and building with intention. Organised by The Startup Zone as part of their 10-year milestone in the Bengaluru startup ecosystem.',
+    description: 'A gathering of founders, operators, and advisors focused on collaboration, connections, and building with intention. Organised by The Startup Zone as part of their 10-year milestone in the Bengaluru startup ecosystem.',
     footer: null
   }
 ];
@@ -80,12 +80,12 @@ export default function SpeakingEvents(): JSX.Element {
       </div>
 
       {/* EVENT CARDS */}
-      <div className="space-y-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
         {eventsData.map((event) => (
-          <div key={event.id} className="flex flex-col md:flex-row border border-[#0E0B42]/10 bg-white">
+          <div key={event.id} className="flex flex-col xl:flex-row border border-[#0E0B42]/10 bg-white h-full">
             
-            {/* LEFT: Image Container with Gallery Options Below */}
-            <div className="w-full md:w-[340px] shrink-0 bg-[#F5F4F0] flex flex-col border-b md:border-b-0 md:border-r border-[#0E0B42]/10">
+            {/* LEFT/TOP: Image Container with Gallery Options Below */}
+            <div className="w-full xl:w-[280px] 2xl:w-[320px] shrink-0 bg-[#F5F4F0] flex flex-col border-b xl:border-b-0 xl:border-r border-[#0E0B42]/10">
               
               {/* Main Image Trigger */}
               <div 
@@ -97,22 +97,21 @@ export default function SpeakingEvents(): JSX.Element {
                   {event.role}
                 </div>
                 
-                {/* Main Thumbnail Image (Covering full area, no gaps) */}
+                {/* Main Thumbnail Image */}
                 <img 
                   src={event.images[0]} 
                   alt={event.title} 
-                  className="w-full h-full absolute inset-0 object-cover transition-opacity duration-300 group-hover:opacity-80"
+                  className="w-full h-full absolute inset-0 object-contain transition-opacity duration-300 group-hover:opacity-80"
                 />
               </div>
 
-              {/* Sleek Gallery Image Options Below Main Image (If multiple exist) */}
-              {/* REDUCED GAP (gap-1.5) AND PADDING (p-2) HERE */}
+              {/* Gallery Image Options Below Main Image */}
               {event.images.length > 1 && (
                 <div className="flex gap-1.5 p-2 bg-[#F5F4F0] border-t border-[#0E0B42]/5 overflow-x-auto scrollbar-hide relative z-10">
                   {event.images.map((img, idx) => (
                     <div 
                       key={idx}
-                      className="w-14 h-14 shrink-0 cursor-pointer rounded overflow-hidden relative group bg-[#EBEAE5] shadow-sm"
+                      className="w-14 h-14 shrink-0 cursor-pointer rounded overflow-hidden relative group bg-[#EBEAE5] shadow-sm flex items-center justify-center"
                       onClick={(e) => {
                         e.stopPropagation();
                         openLightbox(event.images, idx);
@@ -121,11 +120,11 @@ export default function SpeakingEvents(): JSX.Element {
                       {/* Hover Overlay */}
                       <div className="absolute inset-0 bg-[#0E0B42]/0 group-hover:bg-[#0E0B42]/10 transition-colors duration-300 z-10" />
                       
-                      {/* Small Thumbnail (Covered for neat square appearance) */}
+                      {/* Small Thumbnail */}
                       <img 
                         src={img} 
                         alt={`Gallery option ${idx + 1}`} 
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" 
                       />
                     </div>
                   ))}
@@ -133,13 +132,13 @@ export default function SpeakingEvents(): JSX.Element {
               )}
             </div>
 
-            {/* RIGHT: Content */}
+            {/* RIGHT/BOTTOM: Content */}
             <div className="p-6 md:p-8 flex flex-col justify-center flex-grow">
               <div className="text-[10px] tracking-[.15em] uppercase text-[#C4912A] font-bold mb-3">
                 {event.context}
               </div>
               
-              <h3 className="font-['Cormorant_Garamond',serif] text-[26px] text-[#0E0B42] font-bold leading-[1.2] mb-2">
+              <h3 className="font-['Cormorant_Garamond',serif] text-[24px] lg:text-[26px] text-[#0E0B42] font-bold leading-[1.2] mb-2">
                 {event.title}
               </h3>
               
@@ -147,7 +146,7 @@ export default function SpeakingEvents(): JSX.Element {
                 {event.meta}
               </div>
               
-              <p className="text-[14.5px] leading-[1.7] text-[#0E0B42]/75 mb-6 max-w-[800px]">
+              <p className="text-[14.5px] leading-[1.7] text-[#0E0B42]/75 mb-6">
                 {event.description}
               </p>
               
@@ -178,7 +177,7 @@ export default function SpeakingEvents(): JSX.Element {
             </svg>
           </button>
 
-          {/* Previous Button - Only show if more than 1 image */}
+          {/* Previous Button */}
           {currentGallery.length > 1 && (
             <button 
               className="absolute left-4 md:left-12 p-3 text-white/50 hover:text-white hover:bg-white/10 rounded-full transition-all z-50"
@@ -190,7 +189,7 @@ export default function SpeakingEvents(): JSX.Element {
             </button>
           )}
 
-          {/* Current Image (Contained in Lightbox) */}
+          {/* Current Image */}
           <div className="max-w-6xl max-h-[75vh] relative flex flex-col items-center" onClick={(e) => e.stopPropagation()}>
             <img 
               src={currentGallery[currentIndex]} 
@@ -199,7 +198,7 @@ export default function SpeakingEvents(): JSX.Element {
             />
           </div>
 
-          {/* Next Button - Only show if more than 1 image */}
+          {/* Next Button */}
           {currentGallery.length > 1 && (
             <button 
               className="absolute right-4 md:right-12 p-3 text-white/50 hover:text-white hover:bg-white/10 rounded-full transition-all z-50"
@@ -212,7 +211,6 @@ export default function SpeakingEvents(): JSX.Element {
           )}
 
           {/* Lightbox Gallery Thumbnail Strip Below */}
-          {/* REDUCED GAP HERE TOO */}
           {currentGallery.length > 1 && (
             <div 
               className="absolute bottom-6 left-0 right-0 flex justify-center gap-2 px-4 z-50"
@@ -222,11 +220,11 @@ export default function SpeakingEvents(): JSX.Element {
                 <button
                   key={idx}
                   onClick={() => setCurrentIndex(idx)}
-                  className={`w-14 h-14 rounded overflow-hidden border-2 transition-all duration-200 ${
+                  className={`w-14 h-14 rounded overflow-hidden border-2 transition-all duration-200 bg-black ${
                     currentIndex === idx ? 'border-white opacity-100 scale-110' : 'border-transparent opacity-50 hover:opacity-100'
                   }`}
                 >
-                  <img src={img} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover bg-black" />
+                  <img src={img} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-contain" />
                 </button>
               ))}
             </div>

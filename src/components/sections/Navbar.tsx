@@ -6,7 +6,11 @@ export default function Navbar(): JSX.Element {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const location = useLocation();
 
-  const closeMenu = (): void => setMenuOpen(false);
+  // Updated function to handle both menu closing and scrolling to the top
+  const handleNavClick = (): void => {
+    setMenuOpen(false);
+    window.scrollTo(0, 0);
+  };
 
   // LOGO COLORS: 
   // Navy: #0E0B42
@@ -58,7 +62,7 @@ export default function Navbar(): JSX.Element {
         <Link
           to="/"
           className="flex items-center gap-2 sm:gap-2.5 cursor-pointer min-w-0"
-          onClick={closeMenu}
+          onClick={handleNavClick}
         >
           <img
             src={logoUrl}
@@ -67,7 +71,7 @@ export default function Navbar(): JSX.Element {
           />
 
           <div className="font-['Cormorant_Garamond',serif] text-[13px] sm:text-[14.5px] font-semibold text-[#0E0B42] tracking-[.03em] leading-[1.1] truncate">
-            Founder's Counsel &amp; Co
+            Founder's Counsel <span className="text-[#C4912A]">&amp;</span> Co
             <span className="text-[#C4912A] text-[8.5px] sm:text-[9.5px] font-semibold block tracking-[.14em] sm:tracking-[.18em] uppercase mt-[2px] font-['Inter',sans-serif] truncate">
               Advocates &amp; Legal Advisors
             </span>
@@ -76,11 +80,11 @@ export default function Navbar(): JSX.Element {
 
         {/* Desktop / Tablet Navigation */}
         <div className="hidden xl:flex items-center">
-          <Link to="/" className={`${navLinkStyle} ${isActive("/")}`}>
+          <Link to="/" className={`${navLinkStyle} ${isActive("/")}`} onClick={handleNavClick}>
             Home
           </Link>
 
-          <Link to="/about" className={`${navLinkStyle} ${isActive("/about")}`}>
+          <Link to="/about" className={`${navLinkStyle} ${isActive("/about")}`} onClick={handleNavClick}>
             About
           </Link>
 
@@ -88,6 +92,7 @@ export default function Navbar(): JSX.Element {
             <Link
               to="/services"
               className={`${navLinkStyle} ${isActive("/services")}`}
+              onClick={handleNavClick}
             >
               Services <span className="text-[10px] ml-1">▼</span>
             </Link>
@@ -97,6 +102,7 @@ export default function Navbar(): JSX.Element {
                 <Link
                   key={i}
                   to="/services"
+                  onClick={handleNavClick}
                   className="flex flex-col py-3 px-5 text-[12px] text-[#0E0B42]/80 border-l-[3px] border-transparent border-b border-[#C4912A]/10 last:border-b-0 hover:text-[#0E0B42] hover:border-l-[#C4912A] hover:bg-[#C4912A]/5 transition-all"
                 >
                   <span className="font-medium">{svc.title}</span>
@@ -108,13 +114,14 @@ export default function Navbar(): JSX.Element {
             </div>
           </div>
 
-          <Link to="/work" className={`${navLinkStyle} ${isActive("/work")}`}>
+          <Link to="/work" className={`${navLinkStyle} ${isActive("/work")}`} onClick={handleNavClick}>
             Work
           </Link>
 
           <Link
             to="/insights"
             className={`${navLinkStyle} ${isActive("/insights")}`}
+            onClick={handleNavClick}
           >
             Insights
           </Link>
@@ -122,12 +129,14 @@ export default function Navbar(): JSX.Element {
           <Link
             to="/careers"
             className={`${navLinkStyle} ${isActive("/careers")}`}
+            onClick={handleNavClick}
           >
             Careers
           </Link>
 
           <Link
             to="/contact"
+            onClick={handleNavClick}
             className="bg-[#0E0B42] hover:bg-[#0E0B42]/90 text-white py-2 px-[18px] lg:px-[22px] ml-2 lg:ml-3.5 tracking-[.09em] text-[11px] lg:text-[11.5px] font-medium uppercase transition-colors whitespace-nowrap border border-[#C4912A]/30"
           >
             Get in Touch
@@ -173,7 +182,7 @@ export default function Navbar(): JSX.Element {
                     ? "text-[#0E0B42] bg-[#C4912A]/5"
                     : ""
                 }`}
-                onClick={closeMenu}
+                onClick={handleNavClick}
               >
                 {item.label}
               </Link>
@@ -182,7 +191,7 @@ export default function Navbar(): JSX.Element {
             <Link
               to="/contact"
               className="block mx-5 my-4 text-center bg-[#0E0B42] hover:bg-[#0E0B42]/90 text-white py-3 px-5 tracking-[.09em] text-[12px] font-medium uppercase transition-colors border border-[#C4912A]/30"
-              onClick={closeMenu}
+              onClick={handleNavClick}
             >
               Get in Touch
             </Link>
