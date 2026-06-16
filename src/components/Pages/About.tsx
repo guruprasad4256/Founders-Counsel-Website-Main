@@ -5,9 +5,6 @@ import SpeakingEvents from '../sections/AboutEvents'; // <-- Imported the new co
 import profileUrl from '../../assets/SathwikPortfolio.jpg'; 
 
 export default function About(): JSX.Element {
-  // BRAND COLORS:
-  // Navy: #0E0B42
-  // Gold: #C4912A
 
   return (
     <div className="pt-[72px] font-['Inter',sans-serif]">
