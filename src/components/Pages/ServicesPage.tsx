@@ -7,7 +7,7 @@ const servicesData = [
     num: "01 : Corporate Advisory & Structuring",
     title: "Getting the foundation right.",
     sub: "Entity setup · Shareholder agreements · Governance · Restructuring",
-    desc1: "At FCC, our work goes well beyond drafting contracts and documentation. We work closely with founders, leadership teams, and business teams to understand the full context of what they are building — advising on transaction structuring, day-to-day operational matters, and pre-litigation dispute resolution. Our goal is to keep your business protected and moving forward at every stage.",
+    desc1: "At FCC, our work goes well beyond drafting contracts and documentation. We work closely with founders, leadership teams, and business teams to understand the full context of what they are building - advising on transaction structuring, day-to-day operational matters, and pre-litigation dispute resolution. Our goal is to keep your business protected and moving forward at every stage.",
     tags: ["Operational advisory", " Pre-litigation dispute resolution", "Transaction structuring"]
   },
   {
@@ -32,7 +32,7 @@ const servicesData = [
     sub: "Leases · Warehouse agreements · Property documentation",
     desc1: "Office leases, warehouse agreements, and property acquisitions involve more legal risk than most businesses expect. FCC reviews, drafts, and negotiates real estate documentation with a focus on protecting your operational and financial interests.",
     desc2: "The fine print in a commercial lease often comes back in the form of locked-in costs, unclear exit clauses, or liability for fixtures. FCC catches it before you sign.",
-    tags: ["Commercial Leases", "Leave & Licence", "Warehouse & Logistics", "Property documentation", "Sale deeds", "Turnkey agreements", "Artist agreements", "Production house agreements"]
+    tags: ["Commercial Leases", "Leave & Licence", "Warehouse & Logistics", "Property documentation", "Sale deeds", "Turnkey agreements"]
   },
   
 ];

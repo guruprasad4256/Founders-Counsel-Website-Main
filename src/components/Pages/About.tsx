@@ -109,7 +109,7 @@ export default function About(): JSX.Element {
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Media & Entertainment</div>
-              <p className="text-[15.5px] text-[#0E0B42]/60 leading-[1.6]">Artists, production houses, content platforms, and media businesses</p>
+              <p className="text-[15.5px] text-[#0E0B42]/60 leading-[1.6]">Artist agreements, Production house agreements, content platforms, and media businesses</p>
             </div>
             <div className="bg-[#FAF8F4] p-7 md:px-8 hover:bg-white transition-colors">
               <div className="font-['Cormorant_Garamond',serif] text-[17px] text-[#0E0B42] font-bold mb-1.5">Manufacturing</div>

@@ -17,21 +17,21 @@ export default function Work(): JSX.Element {
 
   const workData = [
     {
-      tag: "Commercial Dispute — MedTech",
+      tag: "Commercial Dispute - MedTech",
       title: "Vendor walkout mid-delivery, operations at risk",
       situation: "A MedTech startup's key vendor threatened to walk out mid-delivery, citing payment disputes and unclear contract terms. Operations were at risk of shutting down.",
       action: "Reviewed the existing vendor agreement, identified enforceable obligations on both sides, and led a structured renegotiation. Drafted a revised agreement with clear payment milestones and dispute resolution terms.",
       outcome: "Operations continued without interruption. Revised agreement in place within two weeks."
     },
     {
-      tag: "Payment Dispute — B2B SaaS",
+      tag: "Payment Dispute - B2B SaaS",
       title: "Large client refusing to pay, citing alleged service failures",
       situation: "A B2B SaaS company had a large client refuse to pay a substantial invoice, citing alleged service failures with no prior written notice.",
       action: "Analysed the service agreement, usage logs, and correspondence history. Built a documented position establishing service levels had been met, and issued a formal demand supported by contract clauses.",
       outcome: "Invoice paid in full. Matter resolved without litigation."
     },
     {
-      tag: "Employment — Sensitive Exit",
+      tag: "Employment - Sensitive Exit",
       title: "Senior exit with IP and client relationship risk",
       situation: "A startup needed to exit a senior employee who had access to critical IP and client relationships. The exit had to be handled carefully to protect the business.",
       action: "Advised on the separation process, drafted a comprehensive settlement and release agreement, and ensured IP assignment and non-solicitation obligations were properly documented.",

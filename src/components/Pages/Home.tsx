@@ -128,7 +128,7 @@ export default function Home(): JSX.Element {
             { 
               n: "01", 
               t: "Built from the inside out", 
-              b: "Most law firms have never worked inside a business. FCC is led by a lawyer who has &middot; which means advice accounts for how decisions actually get made.", 
+              b: " Most lawfirms have never worked inside a business. FCC is led by a lawyer who has &middot; which means advice accounts for how decisions actually get made.", 
               d: "In-house experience at growth-stage companies means Sathwik understands the operational context behind every legal question." 
             },
             { 

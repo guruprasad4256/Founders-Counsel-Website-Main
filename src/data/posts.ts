@@ -23,7 +23,7 @@ export const posts: Post[] = [
     cover:
       "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80",
     content: [
-      "Anyone can call themselves a founder. Few earn the title. The difference shows up in the boring weeks — the ones with no launches, no metrics moving, just the slow grind of shipping the next thing.",
+      "Anyone can call themselves a founder. Few earn the title. The difference shows up in the boring weeks - the ones with no launches, no metrics moving, just the slow grind of shipping the next thing.",
       "Real founders are operators first. They sit in the unsexy work: customer calls, churn analysis, hiring, firing, payroll. They don't outsource the parts that hurt.",
       "If you're spending more time talking about building than building, you already know which side of the line you're on. The good news: it's a choice you make again every morning.",
     ],
@@ -32,7 +32,7 @@ export const posts: Post[] = [
     slug: "the-curated-network-effect",
     title: "The curated network effect",
     excerpt:
-      "Why a 200-person room of vetted founders outperforms a 200,000-person Slack — every single time.",
+      "Why a 200-person room of vetted founders outperforms a 200,000-person Slack - every single time.",
     date: "2025-03-28",
     readTime: "5 min read",
     category: "Community",
@@ -76,7 +76,7 @@ export const posts: Post[] = [
     content: [
       "Founder-led sales isn't a phase you skip. It's where you learn the language your customers actually use to describe the problem.",
       "Run every call yourself for the first 50. Record them. Re-listen at 1.5x. Write down the exact phrases that make people lean in.",
-      "When you hand sales off, you're handing off a script that already converts — not a hypothesis.",
+      "When you hand sales off, you're handing off a script that already converts - not a hypothesis.",
     ],
   },
 ];
