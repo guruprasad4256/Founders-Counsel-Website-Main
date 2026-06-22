@@ -52,7 +52,8 @@ export default function Footer(): JSX.Element {
           
           {/* Col 1: Copyright */}
           <div className="text-[11px] text-white/30 text-center md:text-left">
-            &copy; 2026 Founder's Counsel &amp; Co. All rights reserved.
+            © Copyright {new Date().getFullYear()}, Founder's Counsel (A Brand of SCGB Solutions Pvt Ltd). All
+            Rights Reserved.
           </div>
 
           {/* Col 2: Disclaimer - Wrapped in 2 lines */}
